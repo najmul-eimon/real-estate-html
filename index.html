@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <title>Real Estate | Home</title>
+
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/select2.min.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/home.css">
+</head>
+<body>
+  <!-- header start -->
+  <header>
+    <section class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <nav class="navbar navbar-expand-lg">
+              <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo.png" alt="">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Property
+                      </a>
+                      <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Appartment</a></li>
+                        <li><a class="dropdown-item" href="#">Villa</a></li>
+                        <li><a class="dropdown-item" href="#">House</a></li>
+                        <li><a class="dropdown-item" href="#">Duplexes</a></li>
+                        <li><a class="dropdown-item" href="#">Family House</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- header end -->
+
+  <main>
+    <!-- banner start -->
+    <section class="banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="banner-content">
+              <div class="content text-center">
+                <h1>Smart way to find a <span>property</span> right for you</h1>
+                <p>Search confidently with your trusted source of houses for sale or rent</p>
+              </div>
+              <div class="filter-content top-content">
+                <div class="row align-items-center">
+                  <div class="col-md-3">
+                    <h4>Location</h4>
+                    <select class="filter-select">
+                      <option value="0">Select Location</option>
+                      <option value="1">All Cities</option>
+                      <option value="2">New york</option>
+                      <option value="3">Los Angeles</option>
+                      <option value="4">Chicago</option>
+                      <option value="5">San Diego</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <h4>Type</h4>
+                    <select class="filter-select">
+                      <option value="0">Property type</option>
+                      <option value="1">All Property</option>
+                      <option value="2">Single House</option>
+                      <option value="3">Townhouse</option>
+                      <option value="4">Multi Family House</option>
+                      <option value="5">Villa</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <h4>Category</h4>
+                    <select class="filter-select">
+                      <option value="0">All Apartment</option>
+                      <option value="1">Villas</option>
+                      <option value="2">House</option>
+                      <option value="3">Townhouse</option>
+                      <option value="4">Villa</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <div class="filter-buttons d-flex align-items-center">
+                      <button type="button" id="moreFilters" class="filter">Filter<i class="ph-sliders"></i></button>
+                      <button type="button" class="search">Search</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="filter-content bottom-content">
+                <div class="row filter-row">
+                  <div class="col-md-3">
+                    <h4>Status</h4>
+                    <select class="filter-select">
+                      <option value="0">Select Status</option>
+                      <option value="1">All Cities</option>
+                      <option value="2">New york</option>
+                      <option value="3">Los Angeles</option>
+                      <option value="4">Chicago</option>
+                      <option value="5">San Diego</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <h4>City</h4>
+                    <select class="filter-select">
+                      <option value="0">All Cities</option>
+                      <option value="1">New york</option>
+                      <option value="2">Los Angeles</option>
+                      <option value="3">Chicago</option>
+                      <option value="4">San Diego</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <h4>Room</h4>
+                    <select class="filter-select">
+                      <option value="1">Single Room</option>
+                      <option value="2">Double Room</option>
+                    </select>
+                  </div>
+                  <div class="col-md-3">
+                    <h4>Category</h4>
+                    <select class="filter-select">
+                      <option value="1">Duplex</option>
+                      <option value="2">Deluxe</option>
+                      <option value="3">Adjoining</option>
+                      <option value="4">Suite</option>
+                    </select>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Price Range</h4>
+                    <div class="filter-range">
+                      <div id="price-slider-range"></div>
+                      <div class="price-range d-flex justify-content-center align-items-center">
+                        <input type="text" id="amount">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <h4>Area Range</h4>
+                    <div class="filter-range">
+                      <div id="area-slider-range"></div>
+                      <div class="price-range d-flex justify-content-center align-items-center">
+                        <input type="text" id="area">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- achievement start -->
+    <section class="achievement">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title text-center">
+              <h2>Achievement</h2>
+            </div>
+          </div>
+          <div class="col-md-10 offset-md-1">
+            <div class="all-achievement" id="counter">
+              <div class="single text-center">
+                <div class="icon">
+                  <img src="assets/images/svg/complete.svg" alt="">
+                </div>
+                <h3><span class="counter" data-count="250">0</span>+</h3>
+                <p>Completed Property</p>
+              </div>
+              <div class="single text-center">
+                <div class="icon">
+                  <img src="assets/images/svg/sale.svg" alt="">
+                </div>
+                <h3><span class="counter" data-count="760">0</span>+</h3>
+                <p>Property Sales</p>
+              </div>
+              <div class="single text-center">
+                <div class="icon">
+                  <img src="assets/images/svg/rent.svg" alt="">
+                </div>
+                <h3><span class="counter" data-count="1230">0</span>+</h3>
+                <p>Apartment Rent</p>
+              </div>
+              <div class="single text-center">
+                <div class="icon">
+                  <img src="assets/images/svg/client.svg" alt="">
+                </div>
+                <h3><span class="counter" data-count="1520">0</span>+</h3>
+                <p>Happy Clients</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- achievement end -->
+
+    <!-- properties start -->
+    <section class="properties">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title text-center">
+              <h2>The latest properties available</h2>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="list-view-tab" data-bs-toggle="tab" data-bs-target="#list-view-tab-pane" type="button" role="tab" aria-controls="list-view-tab-pane" aria-selected="true">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M4 9C4 7.89543 4.89543 7 6 7H26C27.1046 7 28 7.89543 28 9V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V9Z" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 13H28" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M4 19H28" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M11 13V25" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="grid-view-tab" data-bs-toggle="tab" data-bs-target="#grid-view-tab-pane" type="button" role="tab" aria-controls="grid-view-tab-pane" aria-selected="false">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12 6H8C6.89543 6 6 6.89543 6 8V12C6 13.1046 6.89543 14 8 14H12C13.1046 14 14 13.1046 14 12V8C14 6.89543 13.1046 6 12 6Z" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24 6H20C18.8954 6 18 6.89543 18 8V12C18 13.1046 18.8954 14 20 14H24C25.1046 14 26 13.1046 26 12V8C26 6.89543 25.1046 6 24 6Z" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M12 18H8C6.89543 18 6 18.8954 6 20V24C6 25.1046 6.89543 26 8 26H12C13.1046 26 14 25.1046 14 24V20C14 18.8954 13.1046 18 12 18Z" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M24 18H20C18.8954 18 18 18.8954 18 20V24C18 25.1046 18.8954 26 20 26H24C25.1046 26 26 25.1046 26 24V20C26 18.8954 25.1046 18 24 18Z" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>                    
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade" id="list-view-tab-pane" role="tabpanel" aria-labelledby="list-view-tab" tabindex="0">
+                <!-- filter tab option -->
+                <div class="col-md-12">
+                  <ul class="d-flex align-items-center filter-btn-list">
+                    <li class="active"><button type="button" data-filter="all">All</button></li>
+                    <li><button type="button" data-filter=".cat1">Appartment</button></li>
+                    <li><button type="button" data-filter=".cat2">Lend</button></li>
+                    <li><button type="button" data-filter=".cat3">House</button></li>
+                    <li><button type="button" data-filter=".cat4">Villa</button></li>
+                    <li class="dropdown">
+                      <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        More
+                      </button>
+                      <ul class="dropdown-menu">
+                        <li><button class="dropdown-item" data-filter=".cat5">Luxury Homes</button></li>
+                        <li><button class="dropdown-item" data-filter=".cat6">Office</button></li>
+                        <li><button class="dropdown-item" data-filter=".cat7">Single Family</button></li>
+                        <li><button class="dropdown-item" data-filter=".cat8">Store</button></li>
+                        <li><button class="dropdown-item" data-filter=".cat9">Double</button></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- items -->
+                <div class="col-md-12">
+                  <ul class="list-view" id="property-list-container">
+                    <li class="single-item mix cat1 cat2 cat9">
+                      <div class="image">
+                        <img src="assets/images/properties/img1.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <h3>Luxury Villa in Rego park</h3>
+                        <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface. placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                        <div class="d-flex align-items-center justify-content-between feature">
+                          <div class="text-start">
+                            <p>Floor</p>
+                            <h5>10</h5>
+                          </div>
+                          <div>
+                            <p>Total Space</p>
+                            <h5>758.9 M<sup>2</sup></h5>
+                          </div>
+                          <div class="text-end">
+                            <p>Bedrooms</p>
+                            <h5>3</h5>
+                          </div>
+                        </div>
+                        <div class="buttons d-flex align-items-center">
+                          <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                          <button type="button">Details More</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="single-item mix cat2 cat1 cat8">
+                      <div class="image">
+                        <img src="assets/images/properties/img2.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <h3>Decorative Villa in Lilli park</h3>
+                        <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface. placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                        <div class="d-flex align-items-center justify-content-between feature">
+                          <div class="text-start">
+                            <p>Floor</p>
+                            <h5>10</h5>
+                          </div>
+                          <div>
+                            <p>Total Space</p>
+                            <h5>758.9 M<sup>2</sup></h5>
+                          </div>
+                          <div class="text-end">
+                            <p>Bedrooms</p>
+                            <h5>3</h5>
+                          </div>
+                        </div>
+                        <div class="buttons d-flex align-items-center">
+                          <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                          <button type="button">Details More</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="single-item mix cat3 cat2 cat7">
+                      <div class="image">
+                        <img src="assets/images/properties/img3.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <h3>Amazing Villa in turo park</h3>
+                        <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface. placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                        <div class="d-flex align-items-center justify-content-between feature">
+                          <div class="text-start">
+                            <p>Floor</p>
+                            <h5>10</h5>
+                          </div>
+                          <div>
+                            <p>Total Space</p>
+                            <h5>758.9 M<sup>2</sup></h5>
+                          </div>
+                          <div class="text-end">
+                            <p>Bedrooms</p>
+                            <h5>3</h5>
+                          </div>
+                        </div>
+                        <div class="buttons d-flex align-items-center">
+                          <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                          <button type="button">Details More</button>
+                        </div>
+                      </div>
+                    </li>
+                    <li class="single-item mix cat4 cat3 cat6 cat5">
+                      <div class="image">
+                        <img src="assets/images/properties/img4.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <h3>Premium Villa in Mobo park</h3>
+                        <p>Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface. placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                        <div class="d-flex align-items-center justify-content-between feature">
+                          <div class="text-start">
+                            <p>Floor</p>
+                            <h5>10</h5>
+                          </div>
+                          <div>
+                            <p>Total Space</p>
+                            <h5>758.9 M<sup>2</sup></h5>
+                          </div>
+                          <div class="text-end">
+                            <p>Bedrooms</p>
+                            <h5>3</h5>
+                          </div>
+                        </div>
+                        <div class="buttons d-flex align-items-center">
+                          <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                          <button type="button">Details More</button>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- pagination -->
+                <div class="col-md-12">
+                  <ul class="pagination d-flex align-items-center justify-content-end">
+                    <li><a href="#"><i class="ph-caret-left"></i></a></li>
+                    <li><a href="#" class="active">1</a></li>
+                    <li><a href="#">2</a></li>
+                    <li><a href="#">3</a></li>
+                    <li><a href="#"><i class="ph-caret-right"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+              <div class="tab-pane fade show active" id="grid-view-tab-pane" role="tabpanel" aria-labelledby="grid-view-tab" tabindex="0">
+                <div class="row">
+                  <!-- filter tab option -->
+                  <div class="col-md-12">
+                    <ul class="d-flex align-items-center filter-btn-list">
+                      <li class="active"><button type="button" data-filter="all">All</button></li>
+                      <li><button type="button" data-filter=".cat1">Appartment</button></li>
+                      <li><button type="button" data-filter=".cat2">Lend</button></li>
+                      <li><button type="button" data-filter=".cat3">House</button></li>
+                      <li><button type="button" data-filter=".cat4">Villa</button></li>
+                      <li class="dropdown">
+                        <button class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          More
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><button class="dropdown-item" data-filter=".cat5">Luxury Homes</button></li>
+                          <li><button class="dropdown-item" data-filter=".cat6">Office</button></li>
+                          <li><button class="dropdown-item" data-filter=".cat7">Single Family</button></li>
+                          <li><button class="dropdown-item" data-filter=".cat8">Store</button></li>
+                          <li><button class="dropdown-item" data-filter=".cat9">Double</button></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+
+                  <!-- items -->
+                  <div class="col-md-12">
+                    <div class="grid-view">
+                      <div class="row property-cards property-filter-container" id="property-grid-container">
+                        <div class="col-md-4 mix cat1 cat4">
+                          <div class="single-item">
+                            <div class="item-wrapper">
+                              <h3>Luxury Villa in Rego park</h3>
+                              <div class="d-flex align-items-center justify-content-between feature">
+                                <div class="text-start">
+                                  <p>Floor</p>
+                                  <h5>10</h5>
+                                </div>
+                                <div>
+                                  <p>Total Space</p>
+                                  <h5>758.9 M<sup>2</sup></h5>
+                                </div>
+                                <div class="text-end">
+                                  <p>Bedrooms</p>
+                                  <h5>3</h5>
+                                </div>
+                              </div>
+                              <div class="image">
+                                <img src="assets/images/properties/img1.jpg" class="img-fluid" alt="">
+                              </div>
+                              <p class="desc">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                            </div>
+                            <div class="buttons d-flex align-items-center">
+                              <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                              <button type="button">Details More</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mix cat2 cat5">
+                          <div class="single-item">
+                            <div class="item-wrapper">
+                              <h3>Premium Villa in Mobo park</h3>
+                              <div class="d-flex align-items-center justify-content-between feature">
+                                <div class="text-start">
+                                  <p>Floor</p>
+                                  <h5>10</h5>
+                                </div>
+                                <div>
+                                  <p>Total Space</p>
+                                  <h5>758.9 M<sup>2</sup></h5>
+                                </div>
+                                <div class="text-end">
+                                  <p>Bedrooms</p>
+                                  <h5>3</h5>
+                                </div>
+                              </div>
+                              <div class="image">
+                                <img src="assets/images/properties/img2.jpg" class="img-fluid" alt="">
+                              </div>
+                              <p class="desc">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                            </div>
+                            <div class="buttons d-flex align-items-center">
+                              <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                              <button type="button">Details More</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mix cat3 cat6 cat5">
+                          <div class="single-item">
+                            <div class="item-wrapper">
+                              <h3>Amazing Villa in turo park</h3>
+                              <div class="d-flex align-items-center justify-content-between feature">
+                                <div class="text-start">
+                                  <p>Floor</p>
+                                  <h5>10</h5>
+                                </div>
+                                <div>
+                                  <p>Total Space</p>
+                                  <h5>758.9 M<sup>2</sup></h5>
+                                </div>
+                                <div class="text-end">
+                                  <p>Bedrooms</p>
+                                  <h5>3</h5>
+                                </div>
+                              </div>
+                              <div class="image">
+                                <img src="assets/images/properties/img3.jpg" class="img-fluid" alt="">
+                              </div>
+                              <p class="desc">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                            </div>
+                            <div class="buttons d-flex align-items-center">
+                              <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                              <button type="button">Details More</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mix cat3 cat7 cat8">
+                          <div class="single-item">
+                            <div class="item-wrapper">
+                              <h3>Decorative Villa in Lilli park</h3>
+                              <div class="d-flex align-items-center justify-content-between feature">
+                                <div class="text-start">
+                                  <p>Floor</p>
+                                  <h5>10</h5>
+                                </div>
+                                <div>
+                                  <p>Total Space</p>
+                                  <h5>758.9 M<sup>2</sup></h5>
+                                </div>
+                                <div class="text-end">
+                                  <p>Bedrooms</p>
+                                  <h5>3</h5>
+                                </div>
+                              </div>
+                              <div class="image">
+                                <img src="assets/images/properties/img4.jpg" class="img-fluid" alt="">
+                              </div>
+                              <p class="desc">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                            </div>
+                            <div class="buttons d-flex align-items-center">
+                              <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                              <button type="button">Details More</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mix cat2 cat8 cat7">
+                          <div class="single-item">
+                            <div class="item-wrapper">
+                              <h3>Master Villa in Helo park</h3>
+                              <div class="d-flex align-items-center justify-content-between feature">
+                                <div class="text-start">
+                                  <p>Floor</p>
+                                  <h5>10</h5>
+                                </div>
+                                <div>
+                                  <p>Total Space</p>
+                                  <h5>758.9 M<sup>2</sup></h5>
+                                </div>
+                                <div class="text-end">
+                                  <p>Bedrooms</p>
+                                  <h5>3</h5>
+                                </div>
+                              </div>
+                              <div class="image">
+                                <img src="assets/images/properties/img5.jpg" class="img-fluid" alt="">
+                              </div>
+                              <p class="desc">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                            </div>
+                            <div class="buttons d-flex align-items-center">
+                              <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                              <button type="button">Details More</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-md-4 mix cat1 cat9 cat6">
+                          <div class="single-item">
+                            <div class="item-wrapper">
+                              <h3>Eco Villa in Rego park</h3>
+                              <div class="d-flex align-items-center justify-content-between feature">
+                                <div class="text-start">
+                                  <p>Floor</p>
+                                  <h5>10</h5>
+                                </div>
+                                <div>
+                                  <p>Total Space</p>
+                                  <h5>758.9 M<sup>2</sup></h5>
+                                </div>
+                                <div class="text-end">
+                                  <p>Bedrooms</p>
+                                  <h5>3</h5>
+                                </div>
+                              </div>
+                              <div class="image">
+                                <img src="assets/images/properties/img6.jpg" class="img-fluid" alt="">
+                              </div>
+                              <p class="desc">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                            </div>
+                            <div class="buttons d-flex align-items-center">
+                              <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                              <button type="button">Details More</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- pagination -->
+                  <div class="col-md-12">
+                    <ul class="pagination d-flex align-items-center justify-content-end">
+                      <li><a href="#"><i class="ph-caret-left"></i></a></li>
+                      <li><a href="#" class="active">1</a></li>
+                      <li><a href="#">2</a></li>
+                      <li><a href="#">3</a></li>
+                      <li><a href="#"><i class="ph-caret-right"></i></a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- properties end -->
+
+    <!-- place start -->
+    <section class="place">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title text-center">
+              <h2>Most Populer Place</h2>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="row">
+              <div class="col-md-4">
+                <div class="single-place">
+                  <a href="#">
+                    <img src="assets/images/place/img1.jpg" class="img-fluid" alt="">
+                    <p>New york <i class="ph-caret-circle-right"></i></p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- place end -->
+  </main>
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
