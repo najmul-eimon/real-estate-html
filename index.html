@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="assets/css/select2.min.css" />
   <link rel="stylesheet" href="assets/css/all.min.css">
   <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/home.css">
@@ -78,106 +79,110 @@
         <div class="row">
           <div class="col-md-12">
             <div class="banner-content">
-              <div class="content text-center">
-                <h1>Smart way to find a <span>property</span> right for you</h1>
-                <p>Search confidently with your trusted source of houses for sale or rent</p>
-              </div>
-              <div class="filter-content top-content">
-                <div class="row align-items-center">
-                  <div class="col-md-3">
-                    <h4>Location</h4>
-                    <select class="filter-select">
-                      <option value="0">Select Location</option>
-                      <option value="1">All Cities</option>
-                      <option value="2">New york</option>
-                      <option value="3">Los Angeles</option>
-                      <option value="4">Chicago</option>
-                      <option value="5">San Diego</option>
-                    </select>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>Type</h4>
-                    <select class="filter-select">
-                      <option value="0">Property type</option>
-                      <option value="1">All Property</option>
-                      <option value="2">Single House</option>
-                      <option value="3">Townhouse</option>
-                      <option value="4">Multi Family House</option>
-                      <option value="5">Villa</option>
-                    </select>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>Category</h4>
-                    <select class="filter-select">
-                      <option value="0">All Apartment</option>
-                      <option value="1">Villas</option>
-                      <option value="2">House</option>
-                      <option value="3">Townhouse</option>
-                      <option value="4">Villa</option>
-                    </select>
-                  </div>
-                  <div class="col-md-3">
-                    <div class="filter-buttons d-flex align-items-center">
-                      <button type="button" id="moreFilters" class="filter">Filter<i class="ph-sliders"></i></button>
-                      <button type="button" class="search">Search</button>
-                    </div>
-                  </div>
+              <div class="banner-text">
+                <div class="content text-center">
+                  <h1>Smart way to find a <span>property</span> right for you</h1>
+                  <p>Search confidently with your trusted source of houses for sale or rent</p>
                 </div>
               </div>
-              <div class="filter-content bottom-content">
-                <div class="row filter-row">
-                  <div class="col-md-3">
-                    <h4>Status</h4>
-                    <select class="filter-select">
-                      <option value="0">Select Status</option>
-                      <option value="1">All Cities</option>
-                      <option value="2">New york</option>
-                      <option value="3">Los Angeles</option>
-                      <option value="4">Chicago</option>
-                      <option value="5">San Diego</option>
-                    </select>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>City</h4>
-                    <select class="filter-select">
-                      <option value="0">All Cities</option>
-                      <option value="1">New york</option>
-                      <option value="2">Los Angeles</option>
-                      <option value="3">Chicago</option>
-                      <option value="4">San Diego</option>
-                    </select>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>Room</h4>
-                    <select class="filter-select">
-                      <option value="1">Single Room</option>
-                      <option value="2">Double Room</option>
-                    </select>
-                  </div>
-                  <div class="col-md-3">
-                    <h4>Category</h4>
-                    <select class="filter-select">
-                      <option value="1">Duplex</option>
-                      <option value="2">Deluxe</option>
-                      <option value="3">Adjoining</option>
-                      <option value="4">Suite</option>
-                    </select>
-                  </div>
-                  <div class="col-md-6">
-                    <h4>Price Range</h4>
-                    <div class="filter-range">
-                      <div id="price-slider-range"></div>
-                      <div class="price-range d-flex justify-content-center align-items-center">
-                        <input type="text" id="amount">
+              <div class="filter-main">
+                <div class="filter-content top-content">
+                  <div class="row filter-row align-items-center">
+                    <div class="col-md-6 col-lg-3">
+                      <h4>Location</h4>
+                      <select class="filter-select">
+                        <option value="0">Select Location</option>
+                        <option value="1">All Cities</option>
+                        <option value="2">New york</option>
+                        <option value="3">Los Angeles</option>
+                        <option value="4">Chicago</option>
+                        <option value="5">San Diego</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <h4>Type</h4>
+                      <select class="filter-select">
+                        <option value="0">Property type</option>
+                        <option value="1">All Property</option>
+                        <option value="2">Single House</option>
+                        <option value="3">Townhouse</option>
+                        <option value="4">Multi Family House</option>
+                        <option value="5">Villa</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <h4>Category</h4>
+                      <select class="filter-select">
+                        <option value="0">All Apartment</option>
+                        <option value="1">Villas</option>
+                        <option value="2">House</option>
+                        <option value="3">Townhouse</option>
+                        <option value="4">Villa</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <div class="filter-buttons d-flex align-items-center">
+                        <button type="button" id="moreFilters" class="filter">Filter<i class="ph-sliders"></i></button>
+                        <button type="button" class="search">Search</button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-md-6">
-                    <h4>Area Range</h4>
-                    <div class="filter-range">
-                      <div id="area-slider-range"></div>
-                      <div class="price-range d-flex justify-content-center align-items-center">
-                        <input type="text" id="area">
+                </div>
+                <div class="filter-content bottom-content">
+                  <div class="row filter-row">
+                    <div class="col-md-6 col-lg-3">
+                      <h4>Status</h4>
+                      <select class="filter-select">
+                        <option value="0">Select Status</option>
+                        <option value="1">All Cities</option>
+                        <option value="2">New york</option>
+                        <option value="3">Los Angeles</option>
+                        <option value="4">Chicago</option>
+                        <option value="5">San Diego</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <h4>City</h4>
+                      <select class="filter-select">
+                        <option value="0">All Cities</option>
+                        <option value="1">New york</option>
+                        <option value="2">Los Angeles</option>
+                        <option value="3">Chicago</option>
+                        <option value="4">San Diego</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <h4>Room</h4>
+                      <select class="filter-select">
+                        <option value="1">Single Room</option>
+                        <option value="2">Double Room</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                      <h4>Category</h4>
+                      <select class="filter-select">
+                        <option value="1">Duplex</option>
+                        <option value="2">Deluxe</option>
+                        <option value="3">Adjoining</option>
+                        <option value="4">Suite</option>
+                      </select>
+                    </div>
+                    <div class="col-md-6">
+                      <h4>Price Range</h4>
+                      <div class="filter-range">
+                        <div id="price-slider-range"></div>
+                        <div class="price-range d-flex justify-content-center align-items-center">
+                          <input type="text" id="amount">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <h4>Area Range</h4>
+                      <div class="filter-range">
+                        <div id="area-slider-range"></div>
+                        <div class="price-range d-flex justify-content-center align-items-center">
+                          <input type="text" id="area">
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -199,7 +204,7 @@
               <h2>Achievement</h2>
             </div>
           </div>
-          <div class="col-md-10 offset-md-1">
+          <div class="col-lg-10 offset-lg-1">
             <div class="all-achievement" id="counter">
               <div class="single text-center">
                 <div class="icon">
@@ -249,22 +254,12 @@
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
                 <button class="nav-link" id="list-view-tab" data-bs-toggle="tab" data-bs-target="#list-view-tab-pane" type="button" role="tab" aria-controls="list-view-tab-pane" aria-selected="true">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M4 9C4 7.89543 4.89543 7 6 7H26C27.1046 7 28 7.89543 28 9V24C28 24.2652 27.8946 24.5196 27.7071 24.7071C27.5196 24.8946 27.2652 25 27 25H5C4.73478 25 4.48043 24.8946 4.29289 24.7071C4.10536 24.5196 4 24.2652 4 24V9Z" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M4 13H28" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M4 19H28" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M11 13V25" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                    
+                  <i class="ph-table"></i>
                 </button>
               </li>
               <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="grid-view-tab" data-bs-toggle="tab" data-bs-target="#grid-view-tab-pane" type="button" role="tab" aria-controls="grid-view-tab-pane" aria-selected="false">
-                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M12 6H8C6.89543 6 6 6.89543 6 8V12C6 13.1046 6.89543 14 8 14H12C13.1046 14 14 13.1046 14 12V8C14 6.89543 13.1046 6 12 6Z" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M24 6H20C18.8954 6 18 6.89543 18 8V12C18 13.1046 18.8954 14 20 14H24C25.1046 14 26 13.1046 26 12V8C26 6.89543 25.1046 6 24 6Z" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M12 18H8C6.89543 18 6 18.8954 6 20V24C6 25.1046 6.89543 26 8 26H12C13.1046 26 14 25.1046 14 24V20C14 18.8954 13.1046 18 12 18Z" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    <path d="M24 18H20C18.8954 18 18 18.8954 18 20V24C18 25.1046 18.8954 26 20 26H24C25.1046 26 26 25.1046 26 24V20C26 18.8954 25.1046 18 24 18Z" stroke="#5C727D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>                    
+                  <i class="ph-squares-four"></i>
                 </button>
               </li>
             </ul>
@@ -447,7 +442,7 @@
                   <div class="col-md-12">
                     <div class="grid-view">
                       <div class="row property-cards property-filter-container" id="property-grid-container">
-                        <div class="col-md-4 mix cat1 cat4">
+                        <div class="col-md-6 col-lg-4 mix cat1 cat4">
                           <div class="single-item">
                             <div class="item-wrapper">
                               <h3>Luxury Villa in Rego park</h3>
@@ -476,7 +471,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4 mix cat2 cat5">
+                        <div class="col-md-6 col-lg-4 mix cat2 cat5">
                           <div class="single-item">
                             <div class="item-wrapper">
                               <h3>Premium Villa in Mobo park</h3>
@@ -505,7 +500,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4 mix cat3 cat6 cat5">
+                        <div class="col-md-6 col-lg-4 mix cat3 cat6 cat5">
                           <div class="single-item">
                             <div class="item-wrapper">
                               <h3>Amazing Villa in turo park</h3>
@@ -534,7 +529,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4 mix cat3 cat7 cat8">
+                        <div class="col-md-6 col-lg-4 mix cat3 cat7 cat8">
                           <div class="single-item">
                             <div class="item-wrapper">
                               <h3>Decorative Villa in Lilli park</h3>
@@ -563,7 +558,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4 mix cat2 cat8 cat7">
+                        <div class="col-md-6 col-lg-4 mix cat2 cat8 cat7">
                           <div class="single-item">
                             <div class="item-wrapper">
                               <h3>Master Villa in Helo park</h3>
@@ -592,7 +587,7 @@
                             </div>
                           </div>
                         </div>
-                        <div class="col-md-4 mix cat1 cat9 cat6">
+                        <div class="col-md-6 col-lg-4 mix cat1 cat9 cat6">
                           <div class="single-item">
                             <div class="item-wrapper">
                               <h3>Eco Villa in Rego park</h3>
@@ -654,13 +649,51 @@
             </div>
           </div>
           <div class="col-md-12">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="single-place">
-                  <a href="#">
-                    <img src="assets/images/place/img1.jpg" class="img-fluid" alt="">
-                    <p>New york <i class="ph-caret-circle-right"></i></p>
-                  </a>
+            <div class="all-places">
+              <div class="row">
+                <div class="col-md-6 col-lg-4">
+                  <div class="single-place">
+                    <a href="#">
+                      <img src="assets/images/place/new-york.jpg" class="img-fluid" alt="">
+                      <div class="overlay">
+                        <p>New york <i class="ph-caret-circle-right"></i></p>
+                      </div>
+                    </a>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="single-place">
+                        <a href="#">
+                          <img src="assets/images/place/san.jpg" class="img-fluid" alt="">
+                          <div class="overlay">
+                            <p>San Francisco <i class="ph-caret-circle-right"></i></p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="single-place">
+                        <a href="#">
+                          <img src="assets/images/place/los.jpg" class="img-fluid" alt="">
+                          <div class="overlay">
+                            <p>Los Angeles <i class="ph-caret-circle-right"></i></p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                  <div class="single-place">
+                    <a href="#">
+                      <img src="assets/images/place/minnesota.jpg" class="img-fluid" alt="">
+                      <div class="overlay">
+                        <p>Minnesota <i class="ph-caret-circle-right"></i></p>
+                      </div>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
@@ -669,12 +702,343 @@
       </div>
     </section>
     <!-- place end -->
+
+    <!-- blog start -->
+    <section class="blog">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title text-center">
+              <h2>Latest blog news</h2>
+            </div>
+          </div>
+          <!-- all blogs -->
+          <div class="col-md-12">
+            <div class="all-blogs">
+              <div class="row">
+                <div class="col-xl-5 col-xxl-6">
+                  <div class="single-blog">
+                    <div class="image">
+                      <img src="assets/images/blog/blog1.jpg" class="img-fluid" alt="">
+                    </div>
+                    <div class="content">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <span><i class="ph-calendar"></i> September 26,2023</span>
+                        <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                      </div>
+                      <div class="blog-title">
+                        <h3>How much do you know about...</h3>
+                        <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta. Aliquam ebendum erat.</p>
+                      </div>
+                      <ul class="tags d-flex align-items-center">
+                        <li><a href="#" class="research">Research</a></li>
+                        <li><a href="#" class="case-study">Case Study</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-xl-7 col-xxl-6">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="single-blog small-blog">
+                        <div class="image">
+                          <img src="assets/images/blog/blog2.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="content">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <span><i class="ph-calendar"></i> September 26,2023</span>
+                            <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                          </div>
+                          <div class="blog-title">
+                            <h3>The home do you know about...</h3>
+                            <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta.</p>
+                          </div>
+                          <ul class="tags d-flex align-items-center">
+                            <li><a href="#" class="research">Research</a></li>
+                            <li><a href="#" class="case-study">Case Study</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <div class="single-blog small-blog">
+                        <div class="image">
+                          <img src="assets/images/blog/blog3.jpg" class="img-fluid" alt="">
+                        </div>
+                        <div class="content">
+                          <div class="d-flex align-items-center justify-content-between">
+                            <span><i class="ph-calendar"></i> September 26,2023</span>
+                            <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                          </div>
+                          <div class="blog-title">
+                            <h3>Luxury home that can make...</h3>
+                            <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta.</p>
+                          </div>
+                          <ul class="tags d-flex align-items-center">
+                            <li><a href="#" class="research">Research</a></li>
+                            <li><a href="#" class="case-study">Case Study</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- view all button -->
+          <div class="col-md-12">
+            <div class="text-center view-all">
+              <a href="#" class="view-all-btn">View all</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog end -->
+
+    <!-- contact start -->
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title text-center">
+              <h2>Get In Touch</h2>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xl-3 offset-xl-1">
+            <div class="social-box text-center">
+              <span><i class="ph-phone-call"></i></span>
+              <ul>
+                <li><a href="tel:0057489845">+00 57489845</a></li>
+                <li><a href="tel:0057489845">+00 57489845</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xl-4">
+            <div class="social-box text-center">
+              <h4>Socials</h4>
+              <ul class="social-media">
+                <li>
+                  <a href="#">
+                    <img src="assets/images/svg/linkedin.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/svg/twitter.svg" alt="">
+                  </a>
+                </li>
+                <li>
+                  <a href="#">
+                    <img src="assets/images/svg/facebook.svg" alt="">
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xl-3">
+            <div class="social-box text-center">
+              <span><i class="ph-envelope-open"></i></span>
+              <ul>
+                <li><p>fsgdufgsfsd@gmail.com</p></li>
+                <li><p>fsgdufgsfsd@gmail.com</p></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xl-8 offset-xl-2">
+            <form action="#">
+              <div class="form-fields">
+                <div class="row">
+                  <div class="col-md-6">
+                    <label for="name">Enter Your name</label>
+                    <input type="text" placeholder="Enter Your name" class="input-fields" id="name">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email">Email address</label>
+                    <input type="text" placeholder="Enter Email address" class="input-fields" id="email">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email">Phone Number</label>
+                    <input type="tel" placeholder="Enter Phone Number" class="input-fields" id="phone">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="service">Select Service Type</label>
+                    <select id="service" class="filter-select input-fields">
+                      <option value="0">Select</option>
+                      <option value="1">Single House</option>
+                      <option value="1">Duplex House</option>
+                      <option value="1">Premium Villa</option>
+                    </select>
+                  </div>
+                  <div class="col-md-12">
+                    <label for="message">Select Service Type</label>
+                    <textarea id="message" class="input-fields"></textarea>
+                  </div>
+                  <div class="col-md-12">
+                    <button type="submit" class="submit-btn">Send</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- partner start -->
+    <section class="partner">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title text-center">
+              <h2>Our Partners</h2>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="position-relative">
+              <div class="swiper partner-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="item">
+                      <img src="assets/images/partner/logo1.png" alt="">
+                    </div>
+                  </div>
+                  <div class="swiper-slide item">
+                    <img src="assets/images/partner/logo2.png" alt="">
+                  </div>
+                  <div class="swiper-slide item">
+                    <img src="assets/images/partner/logo3.png" alt="">
+                  </div>
+                  <div class="swiper-slide item">
+                    <img src="assets/images/partner/logo4.png" alt="">
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- partner end -->
   </main>
+
+  <!-- footer start -->
+  <footer>
+    <!-- top-footer start -->
+    <section class="top-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-content">
+                <a href="index.html">
+                  <img src="assets/images/footer-logo.png" alt="">
+                </a>
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam. Lorem ipsum dolor sit amet consecteturr adipiscing elit aliquam</p>
+                <ul class="footer-social d-flex align-items-center">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+              <div class="footer-content">
+                <div class="footer-title">
+                  <h4>Discover</h4>
+                </div>
+                <ul class="footer-links">
+                  <li><a href="#">New york</a></li>
+                  <li><a href="#">San Francisco</a></li>
+                  <li><a href="#">Minnesota</a></li>
+                  <li><a href="#">Los Angeles</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-2">
+              <div class="footer-content">
+                <div class="footer-title">
+                  <h4>Company</h4>
+                </div>
+                <ul class="footer-links">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Property</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">F&Q</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="footer-content">
+                <div class="footer-title">
+                  <h4>Contacts us</h4>
+                </div>
+                <ul class="footer-address">
+                  <li>
+                    <i class="ph-envelope-simple"></i>
+                    <p>mycompany@mail.com</p>
+                  </li>
+                  <li>
+                    <i class="ph-phone"></i>
+                    <p>(589) 487 - 5892</p>
+                  </li>
+                  <li>
+                    <i class="ph-map-pin"></i>
+                    <ul>
+                      <li><p>1545 Broadway</p></li>
+                      <li><p>New York, NY 10036</p></li>
+                      <li><p>+1 012 345 6789</p></li>
+                      <li><p>newyork@casaroyal.com</p></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- top-footer end -->
+
+    <!-- bottom-footer start -->
+    <section class="bottom-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-main">
+              <p>Copywrite © 2023 - RealEstate. All rights reserved.</p>
+
+              <a href="index.html">
+                <img src="assets/images/footer-logo-white.png" alt="">
+              </a>
+
+              <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Property</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bottom-footer end -->
+  </footer>
+  <!-- footer end -->
 
   <script src="assets/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/jquery-3.6.1.min.js"></script>
   <script src="assets/js/jquery-ui.js"></script>
   <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
   <script src="assets/js/mixitup.min.js"></script>
   <script src="assets/js/jquery.magnific-popup.min.js"></script>
   <script src="assets/js/script.js"></script>

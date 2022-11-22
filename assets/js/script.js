@@ -97,6 +97,26 @@ $(function(){
     // other options
   });
 
+  /*======================= partmer slider ========================*/
+  var swiper = new Swiper(".partner-slider", {
+    loop: true,
+    spaceBetween: 24,
+    autoplay: true,
+    slidesPerGroup: 1,
+    pagination: {
+      clickable: true,
+      el: ".swiper-pagination",
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 4,
+      }
+    }
+  });
+
 });
 
 

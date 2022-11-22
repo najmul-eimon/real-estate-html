@@ -7,6 +7,7 @@ General CSS
   --primary: #16A4AD;
   --primary-text: #1C213C;
   --body-text: #5C727D;
+  --body-text2: #AAACB3;
   --white: #fff;
 }
 
@@ -126,6 +127,112 @@ a:focus {
 main{
   margin-top: 61px;
 }
+@media (min-width:992px) and (max-width:1199px) {
+  .title h2 {
+    font-size: 36px;
+  }
+}
+@media (min-width:768px) and (max-width:991px) {
+  .title h2 {
+    font-size: 34px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .title{
+    padding-bottom: 16px;
+  }
+  .title h2 {
+    font-size: 24px;
+    line-height: 36px;
+  }
+}
+
+/*===========================================================
+Select CSS
+=============================================================*/
+.select2-container--default .select2-search--dropdown .select2-search__field {
+  display: none;
+}
+.select2-search--dropdown {
+  padding: 0;
+}
+.select2-dropdown {
+  border: 0;
+  border-radius: 0;
+  box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
+}
+.select2-results {
+  padding: 16px 10px;
+}
+.select2-container--default .select2-results__option--selected {
+  background-color: white;
+}
+.select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
+  background-color: rgba(22, 163, 173, 0.1);
+  color: var(--primary);
+}
+.select2-results__option {
+  padding: 9px 16px;
+  border-radius: 5px;
+  font-size: 16px;
+  color: var(--body-text);
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  border: none;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow:before {
+  content: "\f078";
+  font-family: "Font Awesome 5 Free";
+  font-style: normal;
+  font-weight: 600;
+  color: var(--body-text);
+}
+.select2-container--default .select2-selection--single {
+  background-color: var(--white);
+  border: 0;
+  border-bottom: 1px solid var(--body-text);
+  border-radius: 0;
+}
+.select2-container .select2-selection--single {
+  height: 48px;
+}
+.select2-container--default .select2-selection--single .select2-selection__rendered {
+  color: var(--body-text);
+  line-height: 48px;
+  font-size: 16px;
+}
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 4px;
+  width: auto;
+}
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar {
+  width: 5px;
+}
+
+.select2-container--default .select2-results>.select2-results__options::-moz-scrollbar {
+  width: 5px;
+}
+
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+.select2-container--default .select2-results>.select2-results__options::-moz-scrollbar-track {
+  background-color: #F4F4F4;
+}
+
+.select2-container--default .select2-results>.select2-results__options::-webkit-scrollbar-thumb {
+  background: var(--primary);
+}
+
+.select2-container--default .select2-results>.select2-results__options::-moz-scrollbar-thumb {
+  background: var(--primary);
+}
+
 /*===========================================================
 header CSS
 =============================================================*/
@@ -198,4 +305,132 @@ header{
   color: var(--primary-text);
   border: 0;
   vertical-align: middle;
+}
+@media (min-width:992px) and (max-width:1199px) {
+  .navigation .navbar-nav{
+    margin-right: 0 !important;
+  }
+}
+/*===========================================================
+footer CSS
+=============================================================*/
+footer{
+  background-color: #0D263B;
+  padding: 40px 0 70px;
+  color: var(--white);
+}
+
+/*==================== top-footer css =====================*/
+.top-footer .footer-main{
+  padding-bottom: 24px;
+  border-bottom: 1px solid var(--white);
+}
+.top-footer .footer-content{
+  padding-left: 53px;
+}
+.top-footer p,
+.top-footer a{
+  display: inline-block;
+  font-size: 16px;
+  color: var(--white);
+}
+.top-footer .about{
+  padding: 60px 0;
+}
+.top-footer .footer-social{
+  gap: 22px;
+}
+.top-footer .footer-title{
+  padding-bottom: 40px;
+}
+.top-footer .footer-title h4{
+  font-size: 20px;
+  font-weight: 700;
+}
+.top-footer .footer-links li:not(:last-child){
+  padding-bottom: 16px;
+}
+.top-footer .footer-social a:hover,
+.top-footer .footer-links a:hover{
+  color: var(--primary);
+}
+.top-footer .footer-address > li{
+  display: flex;
+  gap: 6px;
+}
+.top-footer .footer-address > li i{
+  margin-top: 4px;
+}
+.top-footer .footer-address > li:not(:last-child){
+  padding-bottom: 18px;
+}
+
+/*==================== bottom-footer css =====================*/
+.bottom-footer{
+  padding-top: 40px;
+}
+.bottom-footer .footer-main{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottom-footer p{
+  font-size: 18px;
+  color: var(--white);
+}
+.bottom-footer .footer-links{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+}
+.bottom-footer .footer-links a{
+  font-size: 16px;
+  color: var(--white);
+  font-weight: 600;
+}
+.bottom-footer .footer-links a:hover{
+  color: var(--primary);
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+  .top-footer .footer-content{
+    padding-left: 0;
+  }
+  .top-footer .about {
+    padding: 45px 0;
+  }
+  .top-footer p, .top-footer a {
+    font-size: 14px;
+  }
+  .bottom-footer .footer-links a,
+  .bottom-footer p{
+    font-size: 14px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  footer {
+    padding: 40px 0;
+  }
+  .top-footer .about {
+    padding: 30px 0;
+  }
+  .top-footer .footer-links li:not(:last-child) {
+    padding-bottom: 8px;
+  }
+  .top-footer .row{
+    --bs-gutter-y: 32px;
+  }
+  .top-footer .footer-title {
+    padding-bottom: 24px;
+  }
+
+  .bottom-footer {
+    padding-top: 24px;
+  }
+  .bottom-footer .footer-main{
+    flex-direction: column;
+    gap: 24px;
+  }
 }
