@@ -1,6 +1,14 @@
 $(function(){
   "use strick";
 
+  /*======================= navigation menu toggle ========================*/
+  $("#nav-toggler").on("click", function () {
+    $(".main-nav").addClass('show-nav');
+  });
+  $("#close-nav").on("click", function () {
+    $(".main-nav").removeClass('show-nav');
+  });
+
   /*======================= Filter toggle ========================*/
   $("#moreFilters").on("click", function () {
     $(".bottom-content").slideToggle(600);
@@ -31,16 +39,18 @@ $(function(){
     max: 10000,
     values: [ 1000, 8000 ],
     slide: function( event, ui ) {
-      $( "#area" ).val( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
+      $( "#area" ).val( ui.values[ 0 ] + " to " + ui.values[ 1 ] );
     }
   });
   $( "#area" ).val( $( "#area-slider-range" ).slider( "values", 0 ) +
     " to " + $( "#area-slider-range" ).slider( "values", 1 ) );
 
   /*======================= Counter up ========================*/
+  var counterUp = document.querySelector('#counter')
   var counted = 0;
   $(window).scroll(function() {
 
+    if(counterUp){
     var oTop = $('#counter').offset().top - window.innerHeight;
     if (counted == 0 && $(window).scrollTop() > oTop) {
       $('.counter').each(function() {
@@ -65,6 +75,7 @@ $(function(){
       });
       counted = 1;
     }
+  }
   });
 
 
@@ -88,8 +99,13 @@ $(function(){
 
   var gridContainer = document.querySelector('#property-grid-container');
   var listContainer = document.querySelector('#property-list-container');
-  var mixer1 = mixitup(gridContainer);
-  var mixer2 = mixitup(listContainer);
+  if(gridContainer){
+    var mixer1 = mixitup(gridContainer);
+  }
+  if(listContainer){
+    var mixer2 = mixitup(listContainer);
+  }
+
 
 /*======================= latest properties video popup ========================*/
   $('.video-popup').magnificPopup({
@@ -108,6 +124,9 @@ $(function(){
       el: ".swiper-pagination",
     },
     breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
       768: {
         slidesPerView: 3,
       },

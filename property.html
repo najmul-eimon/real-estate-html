@@ -5,7 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
-  <title>Real Estate | Home</title>
+  <title>Real Estate | Property</title>
 
   <script src="https://unpkg.com/phosphor-icons"></script>
 
@@ -16,10 +16,8 @@
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
   <link rel="stylesheet" href="assets/css/common.css">
-  <link rel="stylesheet" href="assets/css/properties.css">
   <link rel="stylesheet" href="assets/css/filter-option.css">
-  <link rel="stylesheet" href="assets/css/contacts.css">
-  <link rel="stylesheet" href="assets/css/home.css">
+  <link rel="stylesheet" href="assets/css/properties.css">
 </head>
 <body>
   <!-- header start -->
@@ -58,10 +56,10 @@
                   </div>
                   <ul class="nav-bar">
                     <li class="nav-item">
-                      <a class="nav-link active" href="index.html">Home</a>
+                      <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link submenu" href="#" role="button">
+                      <a class="nav-link submenu active" href="#" role="button">
                         Property
                       </a>
                       <ul class="dropdown-submenu custom-scrollbar">
@@ -94,183 +92,140 @@
 
   <!-- main start -->
   <main>
-    <!-- banner start -->
-    <section class="banner">
+    <!-- breadcrumb start -->
+    <section class="quick-menu">
       <div class="container">
         <div class="row">
-          <div class="col-md-12">
-            <div class="banner-content">
-              <div class="banner-text">
-                <div class="content text-center">
-                  <h1>Smart way to find a <span>property</span> right for you</h1>
-                  <p>Search confidently with your trusted source of houses for sale or rent</p>
-                </div>
-              </div>
-              <div class="filter-main">
-                <div class="filter-content top-content">
-                  <div class="row filter-row align-items-center">
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>Location</h4>
-                      <select class="filter-select">
-                        <option value="0">Select Location</option>
-                        <option value="1">All Cities</option>
-                        <option value="2">New york</option>
-                        <option value="3">Los Angeles</option>
-                        <option value="4">Chicago</option>
-                        <option value="5">San Diego</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>Type</h4>
-                      <select class="filter-select">
-                        <option value="0">Property type</option>
-                        <option value="1">All Property</option>
-                        <option value="2">Single House</option>
-                        <option value="3">Townhouse</option>
-                        <option value="4">Multi Family House</option>
-                        <option value="5">Villa</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>Category</h4>
-                      <select class="filter-select">
-                        <option value="0">All Apartment</option>
-                        <option value="1">Villas</option>
-                        <option value="2">House</option>
-                        <option value="3">Townhouse</option>
-                        <option value="4">Villa</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <div class="filter-buttons d-flex align-items-center">
-                        <button type="button" id="moreFilters" class="filter">Filter<i class="ph-sliders"></i></button>
-                        <button type="button" class="search">Search</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="filter-content bottom-content">
-                  <div class="row filter-row">
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>Status</h4>
-                      <select class="filter-select">
-                        <option value="0">Select Status</option>
-                        <option value="1">All Cities</option>
-                        <option value="2">New york</option>
-                        <option value="3">Los Angeles</option>
-                        <option value="4">Chicago</option>
-                        <option value="5">San Diego</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>City</h4>
-                      <select class="filter-select">
-                        <option value="0">All Cities</option>
-                        <option value="1">New york</option>
-                        <option value="2">Los Angeles</option>
-                        <option value="3">Chicago</option>
-                        <option value="4">San Diego</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>Room</h4>
-                      <select class="filter-select">
-                        <option value="1">Single Room</option>
-                        <option value="2">Double Room</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>Category</h4>
-                      <select class="filter-select">
-                        <option value="1">Duplex</option>
-                        <option value="2">Deluxe</option>
-                        <option value="3">Adjoining</option>
-                        <option value="4">Suite</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6">
-                      <h4>Price Range</h4>
-                      <div class="filter-range">
-                        <div id="price-slider-range"></div>
-                        <div class="price-range d-flex justify-content-center align-items-center">
-                          <input type="text" id="amount">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <h4>Area Range</h4>
-                      <div class="filter-range">
-                        <div id="area-slider-range"></div>
-                        <div class="price-range d-flex justify-content-center align-items-center">
-                          <input type="text" id="area">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+          <div class="col-lg-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="ph-house"></i> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Property</li>
+              </ol>
+            </nav>
           </div>
         </div>
       </div>
     </section>
-    <!-- banner end -->
-
-    <!-- achievement start -->
-    <section class="achievement">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title text-center">
-              <h2>Achievement</h2>
-            </div>
-          </div>
-          <div class="col-lg-10 offset-lg-1">
-            <div class="all-achievement" id="counter">
-              <div class="single text-center">
-                <div class="icon">
-                  <img src="assets/images/svg/complete.svg" alt="">
-                </div>
-                <h3><span class="counter" data-count="250">0</span>+</h3>
-                <p>Completed Property</p>
-              </div>
-              <div class="single text-center">
-                <div class="icon">
-                  <img src="assets/images/svg/sale.svg" alt="">
-                </div>
-                <h3><span class="counter" data-count="760">0</span>+</h3>
-                <p>Property Sales</p>
-              </div>
-              <div class="single text-center">
-                <div class="icon">
-                  <img src="assets/images/svg/rent.svg" alt="">
-                </div>
-                <h3><span class="counter" data-count="1230">0</span>+</h3>
-                <p>Apartment Rent</p>
-              </div>
-              <div class="single text-center">
-                <div class="icon">
-                  <img src="assets/images/svg/client.svg" alt="">
-                </div>
-                <h3><span class="counter" data-count="1520">0</span>+</h3>
-                <p>Happy Clients</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- achievement end -->
+    <!-- breadcrumb end -->
 
     <!-- properties start -->
-    <section class="properties">
+    <section class="properties property-page">
       <div class="container">
         <div class="row">
+          <!-- section title -->
           <div class="col-md-12">
             <div class="title text-center">
               <h2>The latest properties available</h2>
             </div>
           </div>
+
+          <!-- filter options -->
+          <div class="filter-main">
+            <div class="filter-content top-content">
+              <div class="row filter-row align-items-center">
+                <div class="col-sm-6 col-lg-3">
+                  <h4>Location</h4>
+                  <select class="filter-select">
+                    <option value="0">Select Location</option>
+                    <option value="1">All Cities</option>
+                    <option value="2">New york</option>
+                    <option value="3">Los Angeles</option>
+                    <option value="4">Chicago</option>
+                    <option value="5">San Diego</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <h4>Type</h4>
+                  <select class="filter-select">
+                    <option value="0">Property type</option>
+                    <option value="1">All Property</option>
+                    <option value="2">Single House</option>
+                    <option value="3">Townhouse</option>
+                    <option value="4">Multi Family House</option>
+                    <option value="5">Villa</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <h4>Category</h4>
+                  <select class="filter-select">
+                    <option value="0">All Apartment</option>
+                    <option value="1">Villas</option>
+                    <option value="2">House</option>
+                    <option value="3">Townhouse</option>
+                    <option value="4">Villa</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <div class="filter-buttons d-flex align-items-center">
+                    <button type="button" id="moreFilters" class="filter">Filter<i class="ph-sliders"></i></button>
+                    <button type="button" class="search">Search</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="filter-content bottom-content">
+              <div class="row filter-row">
+                <div class="col-sm-6 col-lg-3">
+                  <h4>Status</h4>
+                  <select class="filter-select">
+                    <option value="0">Select Status</option>
+                    <option value="1">All Cities</option>
+                    <option value="2">New york</option>
+                    <option value="3">Los Angeles</option>
+                    <option value="4">Chicago</option>
+                    <option value="5">San Diego</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <h4>City</h4>
+                  <select class="filter-select">
+                    <option value="0">All Cities</option>
+                    <option value="1">New york</option>
+                    <option value="2">Los Angeles</option>
+                    <option value="3">Chicago</option>
+                    <option value="4">San Diego</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <h4>Room</h4>
+                  <select class="filter-select">
+                    <option value="1">Single Room</option>
+                    <option value="2">Double Room</option>
+                  </select>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                  <h4>Category</h4>
+                  <select class="filter-select">
+                    <option value="1">Duplex</option>
+                    <option value="2">Deluxe</option>
+                    <option value="3">Adjoining</option>
+                    <option value="4">Suite</option>
+                  </select>
+                </div>
+                <div class="col-sm-6">
+                  <h4>Price Range</h4>
+                  <div class="filter-range">
+                    <div id="price-slider-range"></div>
+                    <div class="price-range d-flex justify-content-center align-items-center">
+                      <input type="text" id="amount">
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <h4>Area Range</h4>
+                  <div class="filter-range">
+                    <div id="area-slider-range"></div>
+                    <div class="price-range d-flex justify-content-center align-items-center">
+                      <input type="text" id="area">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- property cards -->
           <div class="col-md-12">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item" role="presentation">
@@ -659,291 +614,6 @@
       </div>
     </section>
     <!-- properties end -->
-
-    <!-- place start -->
-    <section class="place">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title text-center">
-              <h2>Most Populer Place</h2>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="all-places">
-              <div class="row">
-                <div class="col-sm-6 col-lg-4">
-                  <div class="single-place">
-                    <a href="#">
-                      <img src="assets/images/place/new-york.jpg" class="img-fluid" alt="">
-                      <div class="overlay">
-                        <p>New york <i class="ph-caret-circle-right"></i></p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="single-place">
-                        <a href="#">
-                          <img src="assets/images/place/san.jpg" class="img-fluid" alt="">
-                          <div class="overlay">
-                            <p>San Francisco <i class="ph-caret-circle-right"></i></p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="single-place">
-                        <a href="#">
-                          <img src="assets/images/place/los.jpg" class="img-fluid" alt="">
-                          <div class="overlay">
-                            <p>Los Angeles <i class="ph-caret-circle-right"></i></p>
-                          </div>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                  <div class="single-place">
-                    <a href="#">
-                      <img src="assets/images/place/minnesota.jpg" class="img-fluid" alt="">
-                      <div class="overlay">
-                        <p>Minnesota <i class="ph-caret-circle-right"></i></p>
-                      </div>
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- place end -->
-
-    <!-- blog start -->
-    <section class="blog">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title text-center">
-              <h2>Latest blog news</h2>
-            </div>
-          </div>
-          <!-- all blogs -->
-          <div class="col-md-12">
-            <div class="all-blogs">
-              <div class="row">
-                <div class="col-xl-5 col-xxl-6">
-                  <div class="single-blog">
-                    <div class="image">
-                      <img src="assets/images/blog/blog1.jpg" class="img-fluid" alt="">
-                    </div>
-                    <div class="content">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <span><i class="ph-calendar"></i> September 26,2023</span>
-                        <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
-                      </div>
-                      <div class="blog-title">
-                        <h3>How much do you know about...</h3>
-                        <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta. Aliquam ebendum erat.</p>
-                      </div>
-                      <ul class="tags d-flex align-items-center">
-                        <li><a href="#" class="research">Research</a></li>
-                        <li><a href="#" class="case-study">Case Study</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-xl-7 col-xxl-6">
-                  <div class="row">
-                    <div class="col-md-12">
-                      <div class="single-blog small-blog">
-                        <div class="image">
-                          <img src="assets/images/blog/blog2.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="content">
-                          <div class="d-flex align-items-center justify-content-between">
-                            <span><i class="ph-calendar"></i> September 26,2023</span>
-                            <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
-                          </div>
-                          <div class="blog-title">
-                            <h3>The home do you know about...</h3>
-                            <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta.</p>
-                          </div>
-                          <ul class="tags d-flex align-items-center">
-                            <li><a href="#" class="research">Research</a></li>
-                            <li><a href="#" class="case-study">Case Study</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-md-12">
-                      <div class="single-blog small-blog">
-                        <div class="image">
-                          <img src="assets/images/blog/blog3.jpg" class="img-fluid" alt="">
-                        </div>
-                        <div class="content">
-                          <div class="d-flex align-items-center justify-content-between">
-                            <span><i class="ph-calendar"></i> September 26,2023</span>
-                            <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
-                          </div>
-                          <div class="blog-title">
-                            <h3>Luxury home that can make...</h3>
-                            <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta.</p>
-                          </div>
-                          <ul class="tags d-flex align-items-center">
-                            <li><a href="#" class="research">Research</a></li>
-                            <li><a href="#" class="case-study">Case Study</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- view all button -->
-          <div class="col-md-12">
-            <div class="text-center view-all">
-              <a href="#" class="view-all-btn">View all</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- blog end -->
-
-    <!-- contact start -->
-    <section class="contact">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title text-center">
-              <h2>Get In Touch</h2>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xl-3 offset-xl-1">
-            <div class="social-box text-center">
-              <span><i class="ph-phone-call"></i></span>
-              <ul>
-                <li><a href="tel:0057489845">+00 57489845</a></li>
-                <li><a href="tel:0057489845">+00 57489845</a></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xl-4">
-            <div class="social-box text-center">
-              <h4>Socials</h4>
-              <ul class="social-media">
-                <li>
-                  <a href="#">
-                    <img src="assets/images/svg/linkedin.svg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/svg/twitter.svg" alt="">
-                  </a>
-                </li>
-                <li>
-                  <a href="#">
-                    <img src="assets/images/svg/facebook.svg" alt="">
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-md-4 col-lg-4 col-xl-3">
-            <div class="social-box text-center">
-              <span><i class="ph-envelope-open"></i></span>
-              <ul>
-                <li><p>fsgdufgsfsd@gmail.com</p></li>
-                <li><p>fsgdufgsfsd@gmail.com</p></li>
-              </ul>
-            </div>
-          </div>
-          <div class="col-xl-8 offset-xl-2">
-            <form action="#">
-              <div class="contact-form-fields">
-                <div class="row">
-                  <div class="col-md-6">
-                    <label for="name">Enter Your name</label>
-                    <input type="text" placeholder="Enter Your name" class="input-fields" id="name">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="email">Email address</label>
-                    <input type="text" placeholder="Enter Email address" class="input-fields" id="email">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="email">Phone Number</label>
-                    <input type="tel" placeholder="Enter Phone Number" class="input-fields" id="phone">
-                  </div>
-                  <div class="col-md-6">
-                    <label for="service">Select Service Type</label>
-                    <select id="service" class="filter-select input-fields">
-                      <option value="0">Select</option>
-                      <option value="1">Single House</option>
-                      <option value="1">Duplex House</option>
-                      <option value="1">Premium Villa</option>
-                    </select>
-                  </div>
-                  <div class="col-md-12">
-                    <label for="message">Massage</label>
-                    <textarea id="message" class="input-fields"></textarea>
-                  </div>
-                  <div class="col-md-12">
-                    <button type="submit" class="submit-btn">Send</button>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- contact end -->
-
-    <!-- partner start -->
-    <section class="partner">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <div class="title text-center">
-              <h2>Our Partners</h2>
-            </div>
-          </div>
-          <div class="col-md-12">
-            <div class="position-relative">
-              <div class="swiper partner-slider">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide">
-                    <div class="item">
-                      <img src="assets/images/partner/logo1.png" alt="">
-                    </div>
-                  </div>
-                  <div class="swiper-slide item">
-                    <img src="assets/images/partner/logo2.png" alt="">
-                  </div>
-                  <div class="swiper-slide item">
-                    <img src="assets/images/partner/logo3.png" alt="">
-                  </div>
-                  <div class="swiper-slide item">
-                    <img src="assets/images/partner/logo4.png" alt="">
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- partner end -->
   </main>
   <!-- main end -->
 

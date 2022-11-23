@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <title>Real Estate | Property</title>
+
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/select2.min.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/filter-option.css">
+  <link rel="stylesheet" href="assets/css/contacts.css">
+  <link rel="stylesheet" href="assets/css/property-details.css">
+</head>
+<body>
+  <!-- header start -->
+  <header>
+    <section class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row align-items-center">
+              <div class="col-7 col-md-4 col-lg-3 col-xl-2">
+                <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo.png" alt="">
+                </a>
+              </div>
+              <div class="col-5 col-md-8 col-lg-9 col-xl-10">
+                <!-- navbar toggler -->
+                <div class="d-flex align-items-center justify-content-end">
+                  <button type="button" class="nav-toggler" id="nav-toggler">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.636113 3.2854H16.0579C16.3544 3.2854 16.651 3.0259 16.651 2.69226V1.2094C16.651 0.912826 16.3544 0.616254 16.0579 0.616254H0.636113C0.302469 0.616254 0.0429688 0.912826 0.0429688 1.2094V2.69226C0.0429688 3.0259 0.302469 3.2854 0.636113 3.2854ZM0.636113 9.21684H16.0579C16.3544 9.21684 16.651 8.95734 16.651 8.6237V7.14084C16.651 6.84427 16.3544 6.5477 16.0579 6.5477H0.636113C0.302469 6.5477 0.0429688 6.84427 0.0429688 7.14084V8.6237C0.0429688 8.95734 0.302469 9.21684 0.636113 9.21684ZM0.636113 15.1483H16.0579C16.3544 15.1483 16.651 14.8888 16.651 14.5551V13.0723C16.651 12.7757 16.3544 12.4791 16.0579 12.4791H0.636113C0.302469 12.4791 0.0429688 12.7757 0.0429688 13.0723V14.5551C0.0429688 14.8888 0.302469 15.1483 0.636113 15.1483Z" fill="#1C213C"/>
+                      </svg>                    
+                  </button>
+                </div>
+
+                <!-- main menu -->
+                <div class="main-nav">
+                  <!-- mobile header -->
+                  <div class="mobile-header">
+                    <!-- mobile logo -->
+                    <a class="navbar-brand" href="index.html">
+                      <img src="assets/images/logo.png" alt="">
+                    </a>
+
+                    <!-- close menu -->
+                    <button type="button" id="close-nav"><i class="ph-x"></i></button>
+                  </div>
+                  <ul class="nav-bar">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link submenu active" href="#" role="button">
+                        Property
+                      </a>
+                      <ul class="dropdown-submenu custom-scrollbar">
+                        <li><a class="dropdown-item" href="#">Appartment</a></li>
+                        <li><a class="dropdown-item" href="#">Villa</a></li>
+                        <li><a class="dropdown-item" href="#">House</a></li>
+                        <li><a class="dropdown-item" href="#">Duplexes</a></li>
+                        <li><a class="dropdown-item" href="#">Family House</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- header end -->
+
+  <!-- main start -->
+  <main>
+    <!-- breadcrumb start -->
+    <section class="quick-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="ph-house"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="property.html">Property</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Property Details</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrumb end -->
+
+    <!-- property-details start -->
+    <section class="property-details">
+      <div class="container">
+        <!-- property-details title -->
+        <div class="title-area">
+          <div class="row">
+            <div class="col-md-8">
+              <div class="property-title">
+                <h2>Diamond Manor Apartment</h2>
+                <ul>
+                  <li><i class="ph-map-pin"></i><p>Belmont Gardens, Chicago</p></li>
+                  <li><i class="ph-calendar"></i><p>September 26,2023</p></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="price text-end">
+                <h3>$ 150,000</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- property-details main -->
+        <div class="details-main">
+          <div class="row">
+            <!-- description -->
+            <div class="col-md-8">
+              <!-- images -->
+              <div class="details-images">
+                <div class="row">
+                  <div class="col-xl-7half">
+                    <div class="row img-row">
+                      <div class="col-md-12">
+                        <div class="single-img">
+                          <img src="assets/images/property-details/img1.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="single-img">
+                          <img src="assets/images/property-details/img2.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-6">
+                        <div class="single-img">
+                          <img src="assets/images/property-details/img3.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-xl-4half">
+                    <div class="row img-row">
+                      <div class="col-md-12">
+                        <div class="single-img">
+                          <img src="assets/images/property-details/img4.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="single-img">
+                          <img src="assets/images/property-details/img5.jpg" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="single-img">
+                          <img src="assets/images/property-details/img6.jpg" alt="">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- description -->
+              <div class="details-box">
+                <div class="details-title">
+                  <h4>Description</h4>
+                </div>
+                <p>Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.</p>
+                <p>Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes from the LIRR.</p>
+                <p>Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.</p>
+                <p>Master bedroom includes both a standard closet and custom closet wall unit. Large windows face many directions for tons of natural light. Just steps away from QM2 express bus to Manhattan and local buses; only minutes from the LIRR.</p>
+              </div>
+
+              <!-- property details -->
+              <div class="details-box">
+                <div class="details-title">
+                  <h4>Property Detail</h4>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <ul>
+                      <li><p>Property Id : 160</p></li>
+                      <li><p>Price: $ 300 / month</p></li>
+                      <li><p>Property Size: 500 ft2</p></li>
+                      <li><p>Property Lot Size: 1,000 ft2</p></li>
+                      <li><p>Rooms: 5</p></li>
+                      <li><p>Bedrooms: 2</p></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul>
+                      <li><p>Bathrooms: 4</p></li>
+                      <li><p>Custom ID: 7</p></li>
+                      <li><p>Garages: 1</p></li>
+                      <li><p>Year Built: 1950</p></li>
+                      <li><p>Garage Size: 2 cars</p></li>
+                      <li><p>Available from: 2015-09-24</p></li>
+                    </ul>
+                  </div>
+                  <div class="col-md-4">
+                    <ul>
+                      <li><p>Basement: full</p></li>
+                      <li><p>Extra Details: pool</p></li>
+                      <li><p>Roofing: new</p></li>
+                      <li><p>Exterior Material: brick</p></li>
+                      <li><p>Structure Type: Brick</p></li>
+                      <li><p>Floors No: 1</p></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Floor Plans -->
+              <div class="details-box">
+                <div class="details-title">
+                  <h4>Floor Plans</h4>
+                </div>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="first-floor-tab" data-bs-toggle="tab" data-bs-target="#first-floor-tab-pane" type="button" role="tab" aria-controls="first-floor-tab-pane" aria-selected="true">First Floor</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="second-floor-tab" data-bs-toggle="tab" data-bs-target="#second-floor-tab-pane" type="button" role="tab" aria-controls="second-floor-tab-pane" aria-selected="false">Second Floor</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="third-floor-tab" data-bs-toggle="tab" data-bs-target="#third-floor-tab-pane" type="button" role="tab" aria-controls="third-floor-tab-pane" aria-selected="false">Third Floor</button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="top-garden-tab" data-bs-toggle="tab" data-bs-target="#top-garden-tab-pane" type="button" role="tab" aria-controls="top-garden-tab-pane" aria-selected="false">Top Garden</button>
+                  </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                  <div class="tab-pane fade show active" id="first-floor-tab-pane" role="tabpanel" aria-labelledby="first-floor-tab" tabindex="0">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="image">
+                          <img src="assets/images/floor-plans/first.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="text">
+                          <h4>First Floor</h4>
+                          <p>Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="second-floor-tab-pane" role="tabpanel" aria-labelledby="second-floor-tab" tabindex="0">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="image">
+                          <img src="assets/images/floor-plans/second.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="text">
+                          <h4>Second Floor</h4>
+                          <p>Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="third-floor-tab-pane" role="tabpanel" aria-labelledby="third-floor-tab" tabindex="0">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="image">
+                          <img src="assets/images/floor-plans/third.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="text">
+                          <h4>Third Floor</h4>
+                          <p>Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane fade" id="top-garden-tab-pane" role="tabpanel" aria-labelledby="top-garden-tab" tabindex="0">
+                    <div class="row">
+                      <div class="col-md-7">
+                        <div class="image">
+                          <img src="assets/images/floor-plans/fourth.png" alt="">
+                        </div>
+                      </div>
+                      <div class="col-md-5">
+                        <div class="text">
+                          <h4>Top Garden</h4>
+                          <p>Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Video -->
+              <div class="details-box">
+                <div class="details-title">
+                  <h4>Video</h4>
+                </div>
+                <div class="video">
+                  <img src="assets/images/video.jpg" alt="">
+                  <div class="overlay">
+                    <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">
+                      <i class="fas fa-play"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Location -->
+              <div class="details-box">
+                <div class="details-title">
+                  <h4>Location</h4>
+                </div>
+                <div class="location">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d472837.24940038053!2d-77.05569704082191!3d38.87124384912429!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7a02b10a065%3A0x73cf754eae741db3!2sUnited%20States%20Holocaust%20Memorial%20Museum!5e0!3m2!1sen!2sbd!4v1669201040299!5m2!1sen!2sbd" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- sidebar -->
+            <div class="col-md-4">
+              <!-- Featured Properties -->
+              <div class="details-box mt-0">
+                <div class="details-title">
+                  <h5>Featured Properties</h5>
+                </div>
+                <ul class="featured-list">
+                  <li class="d-flex align-items-center">
+                    <div class="image">
+                      <a href="#">
+                        <img src="assets/images/property-details/img-sm3.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="others">
+                      <ul class="d-flex align-items-center">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <a href="#" class="item-title">Luxury House in Greenville</a>
+                      <p>$ 860,000</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div class="image">
+                      <a href="#">
+                        <img src="assets/images/property-details/img-sm2.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="others">
+                      <ul class="d-flex align-items-center">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <a href="#" class="item-title">3 Rooms Manhattan</a>
+                      <p>$ 860,000</p>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div class="image">
+                      <a href="#">
+                        <img src="assets/images/property-details/img-sm1.jpg" alt="">
+                      </a>
+                    </div>
+                    <div class="others">
+                      <ul class="d-flex align-items-center">
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                        <li><i class="fas fa-star"></i></li>
+                      </ul>
+                      <a href="#" class="item-title">Luxury House in Greenville</a>
+                      <p>$ 860,000</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Search Properties -->
+              <div class="details-box">
+                <div class="details-title">
+                  <h5>Search Properties</h5>
+                </div>
+                <!-- filter options -->
+                <div class="filter-main">
+                  <div class="filter-content top-content">
+                    <div class="row filter-row align-items-center">
+                      <div class="col-sm-12">
+                        <h4>Location</h4>
+                        <select class="filter-select">
+                          <option value="0">Select Location</option>
+                          <option value="1">All Cities</option>
+                          <option value="2">New york</option>
+                          <option value="3">Los Angeles</option>
+                          <option value="4">Chicago</option>
+                          <option value="5">San Diego</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12">
+                        <h4>Type</h4>
+                        <select class="filter-select">
+                          <option value="0">Property type</option>
+                          <option value="1">All Property</option>
+                          <option value="2">Single House</option>
+                          <option value="3">Townhouse</option>
+                          <option value="4">Multi Family House</option>
+                          <option value="5">Villa</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12">
+                        <h4>Category</h4>
+                        <select class="filter-select">
+                          <option value="0">All Apartment</option>
+                          <option value="1">Villas</option>
+                          <option value="2">House</option>
+                          <option value="3">Townhouse</option>
+                          <option value="4">Villa</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12">
+                        <div class="filter-buttons d-flex align-items-center">
+                          <button type="button" id="moreFilters" class="filter">Filter<i class="ph-sliders"></i></button>
+                          <button type="button" class="search">Search<i class="ph-magnifying-glass"></i></button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="filter-content bottom-content">
+                    <div class="row filter-row">
+                      <div class="col-sm-12">
+                        <h4>Status</h4>
+                        <select class="filter-select">
+                          <option value="0">Select Status</option>
+                          <option value="1">All Cities</option>
+                          <option value="2">New york</option>
+                          <option value="3">Los Angeles</option>
+                          <option value="4">Chicago</option>
+                          <option value="5">San Diego</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12">
+                        <h4>City</h4>
+                        <select class="filter-select">
+                          <option value="0">All Cities</option>
+                          <option value="1">New york</option>
+                          <option value="2">Los Angeles</option>
+                          <option value="3">Chicago</option>
+                          <option value="4">San Diego</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12">
+                        <h4>Room</h4>
+                        <select class="filter-select">
+                          <option value="1">Single Room</option>
+                          <option value="2">Double Room</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12">
+                        <h4>Category</h4>
+                        <select class="filter-select">
+                          <option value="1">Duplex</option>
+                          <option value="2">Deluxe</option>
+                          <option value="3">Adjoining</option>
+                          <option value="4">Suite</option>
+                        </select>
+                      </div>
+                      <div class="col-sm-12">
+                        <h4>Price Range</h4>
+                        <div class="filter-range">
+                          <div id="price-slider-range"></div>
+                          <div class="price-range d-flex justify-content-center align-items-center">
+                            <input type="text" id="amount">
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-sm-12">
+                        <h4>Area Range</h4>
+                        <div class="filter-range">
+                          <div id="area-slider-range"></div>
+                          <div class="price-range d-flex justify-content-center align-items-center">
+                            <input type="text" id="area">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Drop Messege For Book -->
+              <div class="details-box">
+                <div class="details-title">
+                  <h5>Drop Messege For Book</h5>
+                </div>
+                <form action="#">
+                  <div class="contact-form-fields">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <label for="name">Enter Your name</label>
+                        <input type="text" placeholder="Enter Your name" class="input-fields" id="name">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="email">Email address</label>
+                        <input type="text" placeholder="Enter Email address" class="input-fields" id="email">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="email">Phone Number</label>
+                        <input type="tel" placeholder="Enter Phone Number" class="input-fields" id="phone">
+                      </div>
+                      <div class="col-md-12">
+                        <label for="message">Massage</label>
+                        <textarea id="message" class="input-fields"></textarea>
+                      </div>
+                      <div class="col-md-12">
+                        <button type="submit" class="submit-btn">Send Message</button>
+                      </div>
+                    </div>
+                  </div>
+                </form>
+              </div>
+
+              <!-- Leatest Blogs -->
+              <div class="details-box">
+                <div class="details-title">
+                  <h5>Leatest Blogs</h5>
+                </div>
+                <ul class="blog-list">
+                  <li class="d-flex align-items-center">
+                    <div class="image">
+                      <img src="assets/images/property-details/blog1.png" alt="">
+                    </div>
+                    <div class="others">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <span class="d-flex align-items-center"><i class="ph-calendar"></i>September 26,2023</span>
+                        <a href="#" class="blog-details-btn"><i class="ph-arrow-up-right"></i></a>
+                      </div>
+                      <h4>How much do you know about......</h4>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div class="image">
+                      <img src="assets/images/property-details/blog2.png" alt="">
+                    </div>
+                    <div class="others">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <span class="d-flex align-items-center"><i class="ph-calendar"></i>September 26,2023</span>
+                        <a href="#" class="blog-details-btn"><i class="ph-arrow-up-right"></i></a>
+                      </div>
+                      <h4>How much do you know about......</h4>
+                    </div>
+                  </li>
+                  <li class="d-flex align-items-center">
+                    <div class="image">
+                      <img src="assets/images/property-details/blog3.png" alt="">
+                    </div>
+                    <div class="others">
+                      <div class="d-flex align-items-center justify-content-between">
+                        <span class="d-flex align-items-center"><i class="ph-calendar"></i>September 26,2023</span>
+                        <a href="#" class="blog-details-btn"><i class="ph-arrow-up-right"></i></a>
+                      </div>
+                      <h4>How much do you know about......</h4>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <!-- Share on -->
+              <div class="details-box social-box">
+                <div class="details-title">
+                  <h5>Share on</h5>
+                </div>
+                <ul class="social-icon-list d-flex align-items-center">
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                </ul>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- property-details end -->
+  </main>
+  <!-- main end -->
+
+  <!-- footer start -->
+  <footer>
+    <!-- top-footer start -->
+    <section class="top-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="row">
+            <div class="col-sm-6 col-lg-4">
+              <div class="footer-content">
+                <a href="index.html">
+                  <img src="assets/images/footer-logo.png" alt="">
+                </a>
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam. Lorem ipsum dolor sit amet consecteturr adipiscing elit aliquam</p>
+                <ul class="footer-social d-flex align-items-center">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+              <div class="footer-content">
+                <div class="footer-title">
+                  <h4>Discover</h4>
+                </div>
+                <ul class="footer-links">
+                  <li><a href="#">New york</a></li>
+                  <li><a href="#">San Francisco</a></li>
+                  <li><a href="#">Minnesota</a></li>
+                  <li><a href="#">Los Angeles</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+              <div class="footer-content">
+                <div class="footer-title">
+                  <h4>Company</h4>
+                </div>
+                <ul class="footer-links">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Property</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">F&Q</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="footer-content">
+                <div class="footer-title">
+                  <h4>Contacts us</h4>
+                </div>
+                <ul class="footer-address">
+                  <li>
+                    <i class="ph-envelope-simple"></i>
+                    <p>mycompany@mail.com</p>
+                  </li>
+                  <li>
+                    <i class="ph-phone"></i>
+                    <p>(589) 487 - 5892</p>
+                  </li>
+                  <li>
+                    <i class="ph-map-pin"></i>
+                    <ul>
+                      <li><p>1545 Broadway</p></li>
+                      <li><p>New York, NY 10036</p></li>
+                      <li><p>+1 012 345 6789</p></li>
+                      <li><p>newyork@casaroyal.com</p></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- top-footer end -->
+
+    <!-- bottom-footer start -->
+    <section class="bottom-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-main">
+              <p>Copywrite © 2023 - RealEstate. All rights reserved.</p>
+
+              <a href="index.html">
+                <img src="assets/images/footer-logo-white.png" alt="">
+              </a>
+
+              <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Property</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bottom-footer end -->
+  </footer>
+  <!-- footer end -->
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
