@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
   <link rel="stylesheet" href="assets/css/common.css">
   <link rel="stylesheet" href="assets/css/filter-option.css">
+  <link rel="stylesheet" href="assets/css/properties.css">
   <link rel="stylesheet" href="assets/css/contacts.css">
   <link rel="stylesheet" href="assets/css/property-details.css">
 </head>
@@ -100,9 +101,9 @@
           <div class="col-lg-12">
             <nav aria-label="breadcrumb">
               <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="index.html"><i class="ph-house"></i> Home</a></li>
-                <li class="breadcrumb-item"><a href="property.html">Property</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Property Details</li>
+                <li class="breadcrumb-item"><a href="index.html"><i class="ph-house home"></i> Home</a></li>
+                <li class="breadcrumb-item"><a href="property.html"><i class="ph-caret-right"></i>Property</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><i class="ph-caret-right"></i>Property Details</li>
               </ol>
             </nav>
           </div>
@@ -138,44 +139,48 @@
         <div class="details-main">
           <div class="row">
             <!-- description -->
-            <div class="col-md-8">
+            <div class="col-lg-7 col-xl-8">
               <!-- images -->
               <div class="details-images">
                 <div class="row">
-                  <div class="col-xl-7half">
-                    <div class="row img-row">
-                      <div class="col-md-12">
-                        <div class="single-img">
-                          <img src="assets/images/property-details/img1.jpg" alt="">
+                  <div class="col-lg-12 col-xl-7half">
+                    <div class="left-part-img">
+                      <div class="row img-row">
+                        <div class="col-md-12">
+                          <div class="single-img">
+                            <img src="assets/images/property-details/img1.jpg" alt="">
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="single-img">
-                          <img src="assets/images/property-details/img2.jpg" alt="">
+                        <div class="col-sm-6 col-md-6">
+                          <div class="single-img">
+                            <img src="assets/images/property-details/img2.jpg" alt="">
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="single-img">
-                          <img src="assets/images/property-details/img3.jpg" alt="">
+                        <div class="col-sm-6 col-md-6">
+                          <div class="single-img">
+                            <img src="assets/images/property-details/img3.jpg" alt="">
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="col-xl-4half">
-                    <div class="row img-row">
-                      <div class="col-md-12">
-                        <div class="single-img">
-                          <img src="assets/images/property-details/img4.jpg" alt="">
+                  <div class="col-lg-12 col-xl-4half">
+                    <div class="right-part-img">
+                      <div class="row img-row">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-12">
+                          <div class="single-img">
+                            <img src="assets/images/property-details/img4.jpg" alt="">
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="single-img">
-                          <img src="assets/images/property-details/img5.jpg" alt="">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-12">
+                          <div class="single-img">
+                            <img src="assets/images/property-details/img5.jpg" alt="">
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="single-img">
-                          <img src="assets/images/property-details/img6.jpg" alt="">
+                        <div class="col-sm-6 col-md-6 col-lg-6 col-xl-12">
+                          <div class="single-img">
+                            <img src="assets/images/property-details/img6.jpg" alt="">
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -200,8 +205,8 @@
                   <h4>Property Detail</h4>
                 </div>
                 <div class="row">
-                  <div class="col-md-4">
-                    <ul>
+                  <div class="col-md-6 col-lg-6 col-xl-4">
+                    <ul class="property-details-list">
                       <li><p>Property Id : 160</p></li>
                       <li><p>Price: $ 300 / month</p></li>
                       <li><p>Property Size: 500 ft2</p></li>
@@ -210,8 +215,8 @@
                       <li><p>Bedrooms: 2</p></li>
                     </ul>
                   </div>
-                  <div class="col-md-4">
-                    <ul>
+                  <div class="col-md-6 col-lg-6 col-xl-4">
+                    <ul class="property-details-list">
                       <li><p>Bathrooms: 4</p></li>
                       <li><p>Custom ID: 7</p></li>
                       <li><p>Garages: 1</p></li>
@@ -220,8 +225,8 @@
                       <li><p>Available from: 2015-09-24</p></li>
                     </ul>
                   </div>
-                  <div class="col-md-4">
-                    <ul>
+                  <div class="col-md-6 col-lg-6 col-xl-4">
+                    <ul class="property-details-list">
                       <li><p>Basement: full</p></li>
                       <li><p>Extra Details: pool</p></li>
                       <li><p>Roofing: new</p></li>
@@ -254,13 +259,13 @@
                 </ul>
                 <div class="tab-content" id="myTabContent">
                   <div class="tab-pane fade show active" id="first-floor-tab-pane" role="tabpanel" aria-labelledby="first-floor-tab" tabindex="0">
-                    <div class="row">
-                      <div class="col-md-7">
+                    <div class="row detail-row">
+                      <div class="col-xl-7">
                         <div class="image">
                           <img src="assets/images/floor-plans/first.png" alt="">
                         </div>
                       </div>
-                      <div class="col-md-5">
+                      <div class="col-xl-5">
                         <div class="text">
                           <h4>First Floor</h4>
                           <p>Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.</p>
@@ -269,13 +274,13 @@
                     </div>
                   </div>
                   <div class="tab-pane fade" id="second-floor-tab-pane" role="tabpanel" aria-labelledby="second-floor-tab" tabindex="0">
-                    <div class="row">
-                      <div class="col-md-7">
+                    <div class="row detail-row">
+                      <div class="col-xl-7">
                         <div class="image">
                           <img src="assets/images/floor-plans/second.png" alt="">
                         </div>
                       </div>
-                      <div class="col-md-5">
+                      <div class="col-xl-5">
                         <div class="text">
                           <h4>Second Floor</h4>
                           <p>Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.</p>
@@ -284,13 +289,13 @@
                     </div>
                   </div>
                   <div class="tab-pane fade" id="third-floor-tab-pane" role="tabpanel" aria-labelledby="third-floor-tab" tabindex="0">
-                    <div class="row">
-                      <div class="col-md-7">
+                    <div class="row detail-row">
+                      <div class="col-xl-7">
                         <div class="image">
                           <img src="assets/images/floor-plans/third.png" alt="">
                         </div>
                       </div>
-                      <div class="col-md-5">
+                      <div class="col-xl-5">
                         <div class="text">
                           <h4>Third Floor</h4>
                           <p>Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.</p>
@@ -299,13 +304,13 @@
                     </div>
                   </div>
                   <div class="tab-pane fade" id="top-garden-tab-pane" role="tabpanel" aria-labelledby="top-garden-tab" tabindex="0">
-                    <div class="row">
-                      <div class="col-md-7">
+                    <div class="row detail-row">
+                      <div class="col-xl-7">
                         <div class="image">
                           <img src="assets/images/floor-plans/fourth.png" alt="">
                         </div>
                       </div>
-                      <div class="col-md-5">
+                      <div class="col-xl-5">
                         <div class="text">
                           <h4>Top Garden</h4>
                           <p>Beautiful, updated, ground level Co-op apartment in the desirable Bay Terrace neighborhood. This home features hardwood floors throughout, brand new bathrooms, newer EIK, modern front-load washer/dryer, full dining room, large living area, 3 spacious bedrooms and plenty of storage.</p>
@@ -344,269 +349,282 @@
             </div>
 
             <!-- sidebar -->
-            <div class="col-md-4">
-              <!-- Featured Properties -->
-              <div class="details-box mt-0">
-                <div class="details-title">
-                  <h5>Featured Properties</h5>
-                </div>
-                <ul class="featured-list">
-                  <li class="d-flex align-items-center">
-                    <div class="image">
-                      <a href="#">
-                        <img src="assets/images/property-details/img-sm3.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="others">
-                      <ul class="d-flex align-items-center">
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                      </ul>
-                      <a href="#" class="item-title">Luxury House in Greenville</a>
-                      <p>$ 860,000</p>
-                    </div>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <div class="image">
-                      <a href="#">
-                        <img src="assets/images/property-details/img-sm2.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="others">
-                      <ul class="d-flex align-items-center">
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                      </ul>
-                      <a href="#" class="item-title">3 Rooms Manhattan</a>
-                      <p>$ 860,000</p>
-                    </div>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <div class="image">
-                      <a href="#">
-                        <img src="assets/images/property-details/img-sm1.jpg" alt="">
-                      </a>
-                    </div>
-                    <div class="others">
-                      <ul class="d-flex align-items-center">
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                        <li><i class="fas fa-star"></i></li>
-                      </ul>
-                      <a href="#" class="item-title">Luxury House in Greenville</a>
-                      <p>$ 860,000</p>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Search Properties -->
-              <div class="details-box">
-                <div class="details-title">
-                  <h5>Search Properties</h5>
-                </div>
-                <!-- filter options -->
-                <div class="filter-main">
-                  <div class="filter-content top-content">
-                    <div class="row filter-row align-items-center">
-                      <div class="col-sm-12">
-                        <h4>Location</h4>
-                        <select class="filter-select">
-                          <option value="0">Select Location</option>
-                          <option value="1">All Cities</option>
-                          <option value="2">New york</option>
-                          <option value="3">Los Angeles</option>
-                          <option value="4">Chicago</option>
-                          <option value="5">San Diego</option>
-                        </select>
-                      </div>
-                      <div class="col-sm-12">
-                        <h4>Type</h4>
-                        <select class="filter-select">
-                          <option value="0">Property type</option>
-                          <option value="1">All Property</option>
-                          <option value="2">Single House</option>
-                          <option value="3">Townhouse</option>
-                          <option value="4">Multi Family House</option>
-                          <option value="5">Villa</option>
-                        </select>
-                      </div>
-                      <div class="col-sm-12">
-                        <h4>Category</h4>
-                        <select class="filter-select">
-                          <option value="0">All Apartment</option>
-                          <option value="1">Villas</option>
-                          <option value="2">House</option>
-                          <option value="3">Townhouse</option>
-                          <option value="4">Villa</option>
-                        </select>
-                      </div>
-                      <div class="col-sm-12">
-                        <div class="filter-buttons d-flex align-items-center">
-                          <button type="button" id="moreFilters" class="filter">Filter<i class="ph-sliders"></i></button>
-                          <button type="button" class="search">Search<i class="ph-magnifying-glass"></i></button>
-                        </div>
-                      </div>
-                    </div>
+            <div class="col-lg-5 col-xl-4">
+              <div class="sidebar">
+                <!-- Featured Properties -->
+                <div class="details-box mt-0">
+                  <div class="details-title">
+                    <h5>Featured Properties</h5>
                   </div>
-                  <div class="filter-content bottom-content">
-                    <div class="row filter-row">
-                      <div class="col-sm-12">
-                        <h4>Status</h4>
-                        <select class="filter-select">
-                          <option value="0">Select Status</option>
-                          <option value="1">All Cities</option>
-                          <option value="2">New york</option>
-                          <option value="3">Los Angeles</option>
-                          <option value="4">Chicago</option>
-                          <option value="5">San Diego</option>
-                        </select>
+                  <ul class="featured-list">
+                    <li class="d-flex align-items-center">
+                      <div class="image">
+                        <a href="#">
+                          <img src="assets/images/property-details/img-sm3.jpg" alt="">
+                        </a>
                       </div>
-                      <div class="col-sm-12">
-                        <h4>City</h4>
-                        <select class="filter-select">
-                          <option value="0">All Cities</option>
-                          <option value="1">New york</option>
-                          <option value="2">Los Angeles</option>
-                          <option value="3">Chicago</option>
-                          <option value="4">San Diego</option>
-                        </select>
+                      <div class="others">
+                        <ul class="d-flex align-items-center">
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <a href="#" class="item-title">Luxury House in Greenville</a>
+                        <p>$ 860,000</p>
                       </div>
-                      <div class="col-sm-12">
-                        <h4>Room</h4>
-                        <select class="filter-select">
-                          <option value="1">Single Room</option>
-                          <option value="2">Double Room</option>
-                        </select>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="image">
+                        <a href="#">
+                          <img src="assets/images/property-details/img-sm2.jpg" alt="">
+                        </a>
                       </div>
-                      <div class="col-sm-12">
-                        <h4>Category</h4>
-                        <select class="filter-select">
-                          <option value="1">Duplex</option>
-                          <option value="2">Deluxe</option>
-                          <option value="3">Adjoining</option>
-                          <option value="4">Suite</option>
-                        </select>
+                      <div class="others">
+                        <ul class="d-flex align-items-center">
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <a href="#" class="item-title">3 Rooms Manhattan</a>
+                        <p>$ 860,000</p>
                       </div>
-                      <div class="col-sm-12">
-                        <h4>Price Range</h4>
-                        <div class="filter-range">
-                          <div id="price-slider-range"></div>
-                          <div class="price-range d-flex justify-content-center align-items-center">
-                            <input type="text" id="amount">
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="image">
+                        <a href="#">
+                          <img src="assets/images/property-details/img-sm1.jpg" alt="">
+                        </a>
+                      </div>
+                      <div class="others">
+                        <ul class="d-flex align-items-center">
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                          <li><i class="fas fa-star"></i></li>
+                        </ul>
+                        <a href="#" class="item-title">Luxury House in Greenville</a>
+                        <p>$ 860,000</p>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <!-- Search Properties -->
+                <div class="details-box">
+                  <div class="details-title">
+                    <h5>Search Properties</h5>
+                  </div>
+                  <!-- filter options -->
+                  <div class="filter-main">
+                    <div class="filter-content top-content">
+                      <div class="row filter-row align-items-center">
+                        <div class="col-sm-12">
+                          <h4>Location</h4>
+                          <select class="filter-select">
+                            <option value="0">Select Location</option>
+                            <option value="1">All Cities</option>
+                            <option value="2">New york</option>
+                            <option value="3">Los Angeles</option>
+                            <option value="4">Chicago</option>
+                            <option value="5">San Diego</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-12">
+                          <h4>Type</h4>
+                          <select class="filter-select">
+                            <option value="0">Property type</option>
+                            <option value="1">All Property</option>
+                            <option value="2">Single House</option>
+                            <option value="3">Townhouse</option>
+                            <option value="4">Multi Family House</option>
+                            <option value="5">Villa</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-12">
+                          <h4>Category</h4>
+                          <select class="filter-select">
+                            <option value="0">All Apartment</option>
+                            <option value="1">Villas</option>
+                            <option value="2">House</option>
+                            <option value="3">Townhouse</option>
+                            <option value="4">Villa</option>
+                          </select>
+                        </div>
+                        <div class="col-sm-12 order-1">
+                          <div class="filter-buttons d-flex align-items-center">
+                            <button type="button" id="moreFilters" class="filter">Filter<i class="ph-sliders"></i></button>
+                            <button type="button" class="search">Search<i class="ph-magnifying-glass"></i></button>
+                          </div>
+                        </div>
+                        <div class="col-sm-12 mt-0">
+                          <div class="filter-content bottom-content">
+                            <div class="row filter-row">
+                              <div class="col-sm-12">
+                                <h4>Status</h4>
+                                <select class="filter-select">
+                                  <option value="0">Select Status</option>
+                                  <option value="1">All Cities</option>
+                                  <option value="2">New york</option>
+                                  <option value="3">Los Angeles</option>
+                                  <option value="4">Chicago</option>
+                                  <option value="5">San Diego</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-12">
+                                <h4>City</h4>
+                                <select class="filter-select">
+                                  <option value="0">All Cities</option>
+                                  <option value="1">New york</option>
+                                  <option value="2">Los Angeles</option>
+                                  <option value="3">Chicago</option>
+                                  <option value="4">San Diego</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-12">
+                                <h4>Room</h4>
+                                <select class="filter-select">
+                                  <option value="1">Single Room</option>
+                                  <option value="2">Double Room</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-12">
+                                <h4>Category</h4>
+                                <select class="filter-select">
+                                  <option value="1">Duplex</option>
+                                  <option value="2">Deluxe</option>
+                                  <option value="3">Adjoining</option>
+                                  <option value="4">Suite</option>
+                                </select>
+                              </div>
+                              <div class="col-sm-12">
+                                <h4>Price Range</h4>
+                                <div class="filter-range">
+                                  <div id="price-slider-range"></div>
+                                  <div class="price-range d-flex justify-content-center align-items-center">
+                                    <input type="text" id="amount">
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="col-sm-12">
+                                <h4>Area Range</h4>
+                                <div class="filter-range">
+                                  <div id="area-slider-range"></div>
+                                  <div class="price-range d-flex justify-content-center align-items-center">
+                                    <input type="text" id="area">
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      <div class="col-sm-12">
-                        <h4>Area Range</h4>
-                        <div class="filter-range">
-                          <div id="area-slider-range"></div>
-                          <div class="price-range d-flex justify-content-center align-items-center">
-                            <input type="text" id="area">
-                          </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Drop Messege For Book -->
+                <div class="details-box">
+                  <div class="details-title">
+                    <h5>Drop Messege For Book</h5>
+                  </div>
+                  <form action="#">
+                    <div class="contact-form-fields">
+                      <div class="row">
+                        <div class="col-md-12">
+                          <label for="name">Enter Your name</label>
+                          <input type="text" placeholder="Enter Your name" class="input-fields" id="name">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="email">Email address</label>
+                          <input type="text" placeholder="Enter Email address" class="input-fields" id="email">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="email">Phone Number</label>
+                          <input type="tel" placeholder="Enter Phone Number" class="input-fields" id="phone">
+                        </div>
+                        <div class="col-md-12">
+                          <label for="service">Select Service Type</label>
+                          <select id="service" class="filter-select input-fields">
+                            <option value="0">Select</option>
+                            <option value="1">Single House</option>
+                            <option value="1">Duplex House</option>
+                            <option value="1">Premium Villa</option>
+                          </select>
+                        </div>
+                        <div class="col-md-12">
+                          <label for="message">Massage</label>
+                          <textarea id="message" class="input-fields"></textarea>
+                        </div>
+                        <div class="col-md-12">
+                          <button type="submit" class="submit-btn">Send Message</button>
                         </div>
                       </div>
                     </div>
+                  </form>
+                </div>
+
+                <!-- Leatest Blogs -->
+                <div class="details-box blog-box">
+                  <div class="details-title">
+                    <h5>Leatest Blogs</h5>
                   </div>
+                  <ul class="blog-list">
+                    <li class="d-flex align-items-center">
+                      <div class="image">
+                        <img src="assets/images/property-details/blog1.png" alt="">
+                      </div>
+                      <div class="others">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span class="d-flex align-items-center"><i class="ph-calendar"></i>September 26,2023</span>
+                          <a href="#" class="blog-details-btn"><i class="ph-arrow-up-right"></i></a>
+                        </div>
+                        <h4>How much do you know about......</h4>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="image">
+                        <img src="assets/images/property-details/blog2.png" alt="">
+                      </div>
+                      <div class="others">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span class="d-flex align-items-center"><i class="ph-calendar"></i>September 26,2023</span>
+                          <a href="#" class="blog-details-btn"><i class="ph-arrow-up-right"></i></a>
+                        </div>
+                        <h4>How much do you know about......</h4>
+                      </div>
+                    </li>
+                    <li class="d-flex align-items-center">
+                      <div class="image">
+                        <img src="assets/images/property-details/blog3.png" alt="">
+                      </div>
+                      <div class="others">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span class="d-flex align-items-center"><i class="ph-calendar"></i>September 26,2023</span>
+                          <a href="#" class="blog-details-btn"><i class="ph-arrow-up-right"></i></a>
+                        </div>
+                        <h4>How much do you know about......</h4>
+                      </div>
+                    </li>
+                  </ul>
                 </div>
-              </div>
 
-              <!-- Drop Messege For Book -->
-              <div class="details-box">
-                <div class="details-title">
-                  <h5>Drop Messege For Book</h5>
-                </div>
-                <form action="#">
-                  <div class="contact-form-fields">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <label for="name">Enter Your name</label>
-                        <input type="text" placeholder="Enter Your name" class="input-fields" id="name">
-                      </div>
-                      <div class="col-md-12">
-                        <label for="email">Email address</label>
-                        <input type="text" placeholder="Enter Email address" class="input-fields" id="email">
-                      </div>
-                      <div class="col-md-12">
-                        <label for="email">Phone Number</label>
-                        <input type="tel" placeholder="Enter Phone Number" class="input-fields" id="phone">
-                      </div>
-                      <div class="col-md-12">
-                        <label for="message">Massage</label>
-                        <textarea id="message" class="input-fields"></textarea>
-                      </div>
-                      <div class="col-md-12">
-                        <button type="submit" class="submit-btn">Send Message</button>
-                      </div>
-                    </div>
+                <!-- Share on -->
+                <div class="details-box social-box">
+                  <div class="details-title">
+                    <h5>Share on</h5>
                   </div>
-                </form>
-              </div>
-
-              <!-- Leatest Blogs -->
-              <div class="details-box">
-                <div class="details-title">
-                  <h5>Leatest Blogs</h5>
+                  <ul class="social-icon-list d-flex align-items-center">
+                    <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                    <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  </ul>
                 </div>
-                <ul class="blog-list">
-                  <li class="d-flex align-items-center">
-                    <div class="image">
-                      <img src="assets/images/property-details/blog1.png" alt="">
-                    </div>
-                    <div class="others">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <span class="d-flex align-items-center"><i class="ph-calendar"></i>September 26,2023</span>
-                        <a href="#" class="blog-details-btn"><i class="ph-arrow-up-right"></i></a>
-                      </div>
-                      <h4>How much do you know about......</h4>
-                    </div>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <div class="image">
-                      <img src="assets/images/property-details/blog2.png" alt="">
-                    </div>
-                    <div class="others">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <span class="d-flex align-items-center"><i class="ph-calendar"></i>September 26,2023</span>
-                        <a href="#" class="blog-details-btn"><i class="ph-arrow-up-right"></i></a>
-                      </div>
-                      <h4>How much do you know about......</h4>
-                    </div>
-                  </li>
-                  <li class="d-flex align-items-center">
-                    <div class="image">
-                      <img src="assets/images/property-details/blog3.png" alt="">
-                    </div>
-                    <div class="others">
-                      <div class="d-flex align-items-center justify-content-between">
-                        <span class="d-flex align-items-center"><i class="ph-calendar"></i>September 26,2023</span>
-                        <a href="#" class="blog-details-btn"><i class="ph-arrow-up-right"></i></a>
-                      </div>
-                      <h4>How much do you know about......</h4>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Share on -->
-              <div class="details-box social-box">
-                <div class="details-title">
-                  <h5>Share on</h5>
-                </div>
-                <ul class="social-icon-list d-flex align-items-center">
-                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
-                </ul>
               </div>
 
             </div>
@@ -615,6 +633,142 @@
       </div>
     </section>
     <!-- property-details end -->
+
+    <!-- related-properties start -->
+    <section class="properties related-properties">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title">
+              <h2>Related Properties</h2>
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="swiper related-property-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="single-property">
+                    <div class="item-wrapper">
+                      <h3>Luxury Villa in Rego park</h3>
+                      <div class="d-flex align-items-center justify-content-between feature">
+                        <div class="text-start">
+                          <p>Floor</p>
+                          <h5>10</h5>
+                        </div>
+                        <div>
+                          <p>Total Space</p>
+                          <h5>758.9 M<sup>2</sup></h5>
+                        </div>
+                        <div class="text-end">
+                          <p>Bedrooms</p>
+                          <h5>3</h5>
+                        </div>
+                      </div>
+                      <div class="image">
+                        <img src="assets/images/properties/img1.jpg" class="img-fluid" alt="">
+                      </div>
+                      <p class="desc">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                    </div>
+                    <div class="buttons d-flex align-items-center">
+                      <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                      <button type="button">Details More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single-property">
+                    <div class="item-wrapper">
+                      <h3>Premium Villa Mobo park</h3>
+                      <div class="d-flex align-items-center justify-content-between feature">
+                        <div class="text-start">
+                          <p>Floor</p>
+                          <h5>10</h5>
+                        </div>
+                        <div>
+                          <p>Total Space</p>
+                          <h5>758.9 M<sup>2</sup></h5>
+                        </div>
+                        <div class="text-end">
+                          <p>Bedrooms</p>
+                          <h5>3</h5>
+                        </div>
+                      </div>
+                      <div class="image">
+                        <img src="assets/images/properties/img2.jpg" class="img-fluid" alt="">
+                      </div>
+                      <p class="desc">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                    </div>
+                    <div class="buttons d-flex align-items-center">
+                      <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                      <button type="button">Details More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single-property">
+                    <div class="item-wrapper">
+                      <h3>Amazing Villa in turo park</h3>
+                      <div class="d-flex align-items-center justify-content-between feature">
+                        <div class="text-start">
+                          <p>Floor</p>
+                          <h5>10</h5>
+                        </div>
+                        <div>
+                          <p>Total Space</p>
+                          <h5>758.9 M<sup>2</sup></h5>
+                        </div>
+                        <div class="text-end">
+                          <p>Bedrooms</p>
+                          <h5>3</h5>
+                        </div>
+                      </div>
+                      <div class="image">
+                        <img src="assets/images/properties/img3.jpg" class="img-fluid" alt="">
+                      </div>
+                      <p class="desc">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                    </div>
+                    <div class="buttons d-flex align-items-center">
+                      <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                      <button type="button">Details More</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="single-property">
+                    <div class="item-wrapper">
+                      <h3>Eco Villa in Rego park</h3>
+                      <div class="d-flex align-items-center justify-content-between feature">
+                        <div class="text-start">
+                          <p>Floor</p>
+                          <h5>10</h5>
+                        </div>
+                        <div>
+                          <p>Total Space</p>
+                          <h5>758.9 M<sup>2</sup></h5>
+                        </div>
+                        <div class="text-end">
+                          <p>Bedrooms</p>
+                          <h5>3</h5>
+                        </div>
+                      </div>
+                      <div class="image">
+                        <img src="assets/images/properties/img6.jpg" class="img-fluid" alt="">
+                      </div>
+                      <p class="desc">Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document or a typeface.</p>
+                    </div>
+                    <div class="buttons d-flex align-items-center">
+                      <a type="button" class="video-popup" href="https://www.youtube.com/watch?v=KbTjl1PNCzg">Play Video</a>
+                      <button type="button">Details More</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- related-properties end -->
   </main>
   <!-- main end -->
 

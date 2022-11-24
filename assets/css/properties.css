@@ -84,7 +84,7 @@ properties CSS
   --bs-gutter-y: 32px;
 }
 
-.properties .single-item {
+.properties .single-property {
   box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
   border-radius: 12px;
   background-color: var(--white);
@@ -93,7 +93,7 @@ properties CSS
   overflow: hidden;
 }
 
-.properties .list-view .single-item {
+.properties .list-view .single-property {
   border-radius: 14px;
   text-align: left;
   padding: 32px;
@@ -102,76 +102,76 @@ properties CSS
   gap: 24px;
 }
 
-.properties .single-item .item-wrapper {
+.properties .single-property .item-wrapper {
   padding: 32px 28px 24px 28px;
 }
 
-.properties .single-item h3 {
+.properties .single-property h3 {
   font-size: 20px;
   color: var(--primary-text);
   font-weight: 700;
   padding-bottom: 24px;
 }
 
-.properties .list-view .single-item:not(:last-child) {
+.properties .list-view .single-property:not(:last-child) {
   margin-bottom: 32px;
 }
 
-.properties .list-view .single-item h3 {
+.properties .list-view .single-property h3 {
   padding-bottom: 16px;
 }
 
-.properties .list-view .single-item .feature {
+.properties .list-view .single-property .feature {
   max-width: 361px;
   padding: 24px 0 20px 0;
 }
 
-.properties .single-item h5 {
+.properties .single-property h5 {
   font-size: 16px;
   color: var(--primary);
   font-weight: 900;
   padding-top: 8px;
 }
 
-.properties .single-item p {
+.properties .single-property p {
   font-size: 16px;
   color: var(--body-text);
 }
 
-.properties .single-item .desc {
+.properties .single-property .desc {
   padding: 0 14px;
 }
 
-.properties .single-item .image {
+.properties .single-property .image {
   border-radius: 4px;
   overflow: hidden;
   margin: 24px 0;
 }
 
-.properties .single-item .image img {
+.properties .single-property .image img {
   width: 100%;
 }
 
-.properties .list-view .single-item .image {
+.properties .list-view .single-property .image {
   margin: 0;
   width: 360px;
   flex-shrink: 0;
 }
 
 
-.properties .single-item .buttons {
+.properties .single-property .buttons {
   gap: 2px;
   background-color: #EFEFEF;
 }
 
-.properties .list-view .single-item .buttons {
+.properties .list-view .single-property .buttons {
   border-bottom-left-radius: 8px;
   border-bottom-right-radius: 8px;
   overflow: hidden;
 }
 
-.properties .single-item a,
-.properties .single-item button {
+.properties .single-property a,
+.properties .single-property button {
   display: inline-block;
   text-align: center;
   width: 50%;
@@ -182,8 +182,8 @@ properties CSS
   font-weight: 600;
 }
 
-.properties .single-item a:hover,
-.properties .single-item button:hover {
+.properties .single-property a:hover,
+.properties .single-property button:hover {
   background-color: var(--primary);
   color: var(--white);
 }
@@ -220,20 +220,20 @@ properties CSS
     padding: 32px 0;
   }
 
-  .properties .single-item h3 {
+  .properties .single-property h3 {
     font-size: 18px;
   }
 
-  .properties .list-view .single-item .image {
+  .properties .list-view .single-property .image {
     width: 400px;
   }
 
-  .properties .single-item .item-wrapper {
+  .properties .single-property .item-wrapper {
     padding: 32px 24px 24px 24px;
   }
 
-  .properties .single-item a, 
-  .properties .single-item button {
+  .properties .single-property a, 
+  .properties .single-property button {
     font-size: 16px;
   }
 }
@@ -243,23 +243,23 @@ properties CSS
     padding: 32px 0;
   }
 
-  .properties .single-item h3 {
+  .properties .single-property h3 {
     font-size: 18px;
   }
 
-  .properties .list-view .single-item {
+  .properties .list-view .single-property {
     padding: 20px;
     gap: 20px;
   }
-  .properties .single-item a, 
-  .properties .single-item button {
+  .properties .single-property a, 
+  .properties .single-property button {
     font-size: 16px;
   }
-  .properties .list-view .single-item p{
+  .properties .list-view .single-property p{
     font-size: 14px;
   }
 
-  .properties .list-view .single-item .image {
+  .properties .list-view .single-property .image {
     width: 50%;
   }
 }
@@ -288,25 +288,25 @@ properties CSS
     justify-content: center !important;
   }
 
-  .properties .single-item .item-wrapper {
+  .properties .single-property .item-wrapper {
     padding: 32px 15px 16px 15px;
   }
 
-  .properties .single-item h3 {
+  .properties .single-property h3 {
     font-size: 16px;
     padding-bottom: 16px;
   }
 
-  .properties .single-item p {
+  .properties .single-property p {
     font-size: 14px;
   }
 
-  .properties .single-item .image {
+  .properties .single-property .image {
     margin: 16px 0;
   }
 
-  .properties .single-item a,
-  .properties .single-item button {
+  .properties .single-property a,
+  .properties .single-property button {
     padding: 11px 0;
     font-size: 16px;
   }

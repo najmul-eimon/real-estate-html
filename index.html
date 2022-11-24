@@ -16,8 +16,11 @@
   <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
   <link rel="stylesheet" href="assets/css/magnific-popup.css">
   <link rel="stylesheet" href="assets/css/common.css">
-  <link rel="stylesheet" href="assets/css/properties.css">
   <link rel="stylesheet" href="assets/css/filter-option.css">
+  <link rel="stylesheet" href="assets/css/achievment.css">
+  <link rel="stylesheet" href="assets/css/properties.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
+  <link rel="stylesheet" href="assets/css/partner.css">
   <link rel="stylesheet" href="assets/css/contacts.css">
   <link rel="stylesheet" href="assets/css/home.css">
 </head>
@@ -141,68 +144,70 @@
                         <option value="4">Villa</option>
                       </select>
                     </div>
-                    <div class="col-sm-6 col-lg-3">
+                    <div class="col-sm-6 col-lg-3 order-1 order-sm-0">
                       <div class="filter-buttons d-flex align-items-center">
                         <button type="button" id="moreFilters" class="filter">Filter<i class="ph-sliders"></i></button>
                         <button type="button" class="search">Search</button>
                       </div>
                     </div>
-                  </div>
-                </div>
-                <div class="filter-content bottom-content">
-                  <div class="row filter-row">
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>Status</h4>
-                      <select class="filter-select">
-                        <option value="0">Select Status</option>
-                        <option value="1">All Cities</option>
-                        <option value="2">New york</option>
-                        <option value="3">Los Angeles</option>
-                        <option value="4">Chicago</option>
-                        <option value="5">San Diego</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>City</h4>
-                      <select class="filter-select">
-                        <option value="0">All Cities</option>
-                        <option value="1">New york</option>
-                        <option value="2">Los Angeles</option>
-                        <option value="3">Chicago</option>
-                        <option value="4">San Diego</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>Room</h4>
-                      <select class="filter-select">
-                        <option value="1">Single Room</option>
-                        <option value="2">Double Room</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6 col-lg-3">
-                      <h4>Category</h4>
-                      <select class="filter-select">
-                        <option value="1">Duplex</option>
-                        <option value="2">Deluxe</option>
-                        <option value="3">Adjoining</option>
-                        <option value="4">Suite</option>
-                      </select>
-                    </div>
-                    <div class="col-sm-6">
-                      <h4>Price Range</h4>
-                      <div class="filter-range">
-                        <div id="price-slider-range"></div>
-                        <div class="price-range d-flex justify-content-center align-items-center">
-                          <input type="text" id="amount">
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-sm-6">
-                      <h4>Area Range</h4>
-                      <div class="filter-range">
-                        <div id="area-slider-range"></div>
-                        <div class="price-range d-flex justify-content-center align-items-center">
-                          <input type="text" id="area">
+                    <div class="col-sm-12 mt-0">
+                      <div class="bottom-content">
+                        <div class="row filter-row">
+                          <div class="col-sm-6 col-lg-3">
+                            <h4>Status</h4>
+                            <select class="filter-select">
+                              <option value="0">Select Status</option>
+                              <option value="1">All Cities</option>
+                              <option value="2">New york</option>
+                              <option value="3">Los Angeles</option>
+                              <option value="4">Chicago</option>
+                              <option value="5">San Diego</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-6 col-lg-3">
+                            <h4>City</h4>
+                            <select class="filter-select">
+                              <option value="0">All Cities</option>
+                              <option value="1">New york</option>
+                              <option value="2">Los Angeles</option>
+                              <option value="3">Chicago</option>
+                              <option value="4">San Diego</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-6 col-lg-3">
+                            <h4>Room</h4>
+                            <select class="filter-select">
+                              <option value="1">Single Room</option>
+                              <option value="2">Double Room</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-6 col-lg-3">
+                            <h4>Category</h4>
+                            <select class="filter-select">
+                              <option value="1">Duplex</option>
+                              <option value="2">Deluxe</option>
+                              <option value="3">Adjoining</option>
+                              <option value="4">Suite</option>
+                            </select>
+                          </div>
+                          <div class="col-sm-6">
+                            <h4>Price Range</h4>
+                            <div class="filter-range">
+                              <div id="price-slider-range"></div>
+                              <div class="price-range d-flex justify-content-center align-items-center">
+                                <input type="text" id="amount">
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6">
+                            <h4>Area Range</h4>
+                            <div class="filter-range">
+                              <div id="area-slider-range"></div>
+                              <div class="price-range d-flex justify-content-center align-items-center">
+                                <input type="text" id="area">
+                              </div>
+                            </div>
+                          </div>
                         </div>
                       </div>
                     </div>
@@ -312,7 +317,7 @@
                 <!-- items -->
                 <div class="col-md-12">
                   <ul class="list-view" id="property-list-container">
-                    <li class="single-item mix cat1 cat2 cat9">
+                    <li class="single-property mix cat1 cat2 cat9">
                       <div class="image">
                         <img src="assets/images/properties/img1.jpg" class="img-fluid" alt="">
                       </div>
@@ -339,7 +344,7 @@
                         </div>
                       </div>
                     </li>
-                    <li class="single-item mix cat2 cat1 cat8">
+                    <li class="single-property mix cat2 cat1 cat8">
                       <div class="image">
                         <img src="assets/images/properties/img2.jpg" class="img-fluid" alt="">
                       </div>
@@ -366,7 +371,7 @@
                         </div>
                       </div>
                     </li>
-                    <li class="single-item mix cat3 cat2 cat7">
+                    <li class="single-property mix cat3 cat2 cat7">
                       <div class="image">
                         <img src="assets/images/properties/img3.jpg" class="img-fluid" alt="">
                       </div>
@@ -393,7 +398,7 @@
                         </div>
                       </div>
                     </li>
-                    <li class="single-item mix cat4 cat3 cat6 cat5">
+                    <li class="single-property mix cat4 cat3 cat6 cat5">
                       <div class="image">
                         <img src="assets/images/properties/img4.jpg" class="img-fluid" alt="">
                       </div>
@@ -464,7 +469,7 @@
                     <div class="grid-view">
                       <div class="row property-cards property-filter-container" id="property-grid-container">
                         <div class="col-md-6 col-lg-4 mix cat1 cat4">
-                          <div class="single-item">
+                          <div class="single-property">
                             <div class="item-wrapper">
                               <h3>Luxury Villa in Rego park</h3>
                               <div class="d-flex align-items-center justify-content-between feature">
@@ -493,7 +498,7 @@
                           </div>
                         </div>
                         <div class="col-md-6 col-lg-4 mix cat2 cat5">
-                          <div class="single-item">
+                          <div class="single-property">
                             <div class="item-wrapper">
                               <h3>Premium Villa in Mobo park</h3>
                               <div class="d-flex align-items-center justify-content-between feature">
@@ -522,7 +527,7 @@
                           </div>
                         </div>
                         <div class="col-md-6 col-lg-4 mix cat3 cat6 cat5">
-                          <div class="single-item">
+                          <div class="single-property">
                             <div class="item-wrapper">
                               <h3>Amazing Villa in turo park</h3>
                               <div class="d-flex align-items-center justify-content-between feature">
@@ -551,7 +556,7 @@
                           </div>
                         </div>
                         <div class="col-md-6 col-lg-4 mix cat3 cat7 cat8">
-                          <div class="single-item">
+                          <div class="single-property">
                             <div class="item-wrapper">
                               <h3>Decorative Villa in Lilli park</h3>
                               <div class="d-flex align-items-center justify-content-between feature">
@@ -580,7 +585,7 @@
                           </div>
                         </div>
                         <div class="col-md-6 col-lg-4 mix cat2 cat8 cat7">
-                          <div class="single-item">
+                          <div class="single-property">
                             <div class="item-wrapper">
                               <h3>Master Villa in Helo park</h3>
                               <div class="d-flex align-items-center justify-content-between feature">
@@ -609,7 +614,7 @@
                           </div>
                         </div>
                         <div class="col-md-6 col-lg-4 mix cat1 cat9 cat6">
-                          <div class="single-item">
+                          <div class="single-property">
                             <div class="item-wrapper">
                               <h3>Eco Villa in Rego park</h3>
                               <div class="d-flex align-items-center justify-content-between feature">
@@ -735,9 +740,9 @@
           </div>
           <!-- all blogs -->
           <div class="col-md-12">
-            <div class="all-blogs">
+            <div class="blogs">
               <div class="row">
-                <div class="col-xl-5 col-xxl-6">
+                <div class="col-lg-6 col-xl-5 col-xxl-6">
                   <div class="single-blog">
                     <div class="image">
                       <img src="assets/images/blog/blog1.jpg" class="img-fluid" alt="">
@@ -758,7 +763,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-xl-7 col-xxl-6">
+                <div class="col-lg-6 col-xl-7 col-xxl-6">
                   <div class="row">
                     <div class="col-md-12">
                       <div class="single-blog small-blog">

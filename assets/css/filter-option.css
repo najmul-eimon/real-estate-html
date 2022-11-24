@@ -24,8 +24,8 @@ filter properties CSS
   --bs-gutter-y: 24px;
 }
 
-.filter-main .filter-content.bottom-content {
-  margin-top: 16px;
+.filter-main .bottom-content {
+  margin-top: 24px;
   display: none;
 }
 
@@ -61,6 +61,7 @@ filter properties CSS
   border: 1px solid var(--body-text2);
   cursor: pointer;
   outline: none;
+  top: -4px;
 }
 
 .filter-main .filter-content .filter-range .ui-widget.ui-widget-content {

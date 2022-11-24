@@ -2,7 +2,7 @@
 property details CSS
 =============================================================*/
 .property-details {
-  padding-top: 20px;
+  padding-top: 8px;
   padding-bottom: 32px;
 }
 
@@ -236,7 +236,14 @@ property details CSS
   flex-shrink: 0;
 }
 
-.property-details .featured-list .image img {
+.property-details .featured-list .image img,
+.property-details .blog-list .image img {
+  width: 100%;
+}
+
+.property-details .featured-list .others,
+.property-details .blog-list .others {
+  flex-grow: 1;
   width: 100%;
 }
 
@@ -259,40 +266,43 @@ property details CSS
 }
 
 /* blog list */
-.property-details .blog-list li{
+.property-details .blog-list li {
   gap: 12px;
 }
-.property-details .blog-list .image{
+
+.property-details .blog-list .image {
   border-radius: 16px;
   overflow: hidden;
   width: 134px;
   flex-shrink: 0;
   height: auto;
 }
-.property-details .blog-list .image img {
-  width: 100%;
-}
-.property-details .blog-list span{
+
+.property-details .blog-list span {
   gap: 4px;
   font-size: 14px;
   color: var(--primary-text2);
 }
-.property-details .blog-list span i{
+
+.property-details .blog-list span i {
   font-size: 18px;
 }
-.property-details .blog-list .blog-details-btn{
+
+.property-details .blog-list .blog-details-btn {
   display: block;
   height: 24px;
   width: 24px;
   text-align: center;
   background-color: transparent;
 }
-.property-details .blog-list .blog-details-btn i{
+
+.property-details .blog-list .blog-details-btn i {
   font-size: 20px;
   line-height: 24px;
   color: var(--primary);
 }
-.property-details .blog-list h4{
+
+.property-details .blog-list h4 {
   padding-top: 12px;
   font-size: 16px;
   font-weight: 600;
@@ -304,13 +314,15 @@ property details CSS
 }
 
 /* social */
-.property-details .social-box{
+.property-details .social-box {
   box-shadow: none;
 }
-.property-details .social-icon-list{
+
+.property-details .social-icon-list {
   gap: 24px;
 }
-.property-details .social-icon-list a{
+
+.property-details .social-icon-list a {
   display: block;
   height: 42px;
   width: 48px;
@@ -318,13 +330,18 @@ property details CSS
   border-radius: 4px;
   text-align: center;
 }
-.property-details .social-icon-list a i{
+
+.property-details .social-icon-list a i {
   font-size: 28px;
   line-height: 42px;
   color: #A6B3BB;
 }
 
 /* filter options */
+.filter-main .filter-content.bottom-content {
+  margin-top: 24px;
+}
+
 .property-details .filter-main .filter-content {
   box-shadow: none;
   padding: 0;
@@ -337,10 +354,10 @@ property details CSS
   gap: 16px;
 }
 
-.property-details .filter-main .filter-buttons .filter {
+/* .property-details .filter-main .filter-buttons .filter {
   background-color: rgba(22, 163, 173, 0.2);
   padding-left: 24px;
-}
+} */
 
 .property-details .filter-main .filter-buttons .search {
   width: 100%;
@@ -349,7 +366,8 @@ property details CSS
   align-items: center;
   gap: 8px;
 }
-.property-details .filter-main .filter-buttons .search i{
+
+.property-details .filter-main .filter-buttons .search i {
   font-size: 20px;
 }
 
@@ -358,12 +376,230 @@ property details CSS
   padding: 0;
   margin-top: 0;
 }
+
 .property-details .contact-form-fields .row {
   --bs-gutter-y: 16px;
 }
+
 .property-details .contact-form-fields .input-fields {
   height: 40px;
 }
+
 .property-details .contact-form-fields textarea.input-fields {
   height: 110px;
+}
+
+@media (min-width:992px) and (max-width:1399px) {
+  .property-details .featured-list .image {
+    width: 130px;
+  }
+
+  .property-details .featured-list .item-title {
+    padding: 8px 0;
+    font-size: 14px;
+  }
+
+  .property-details .blog-list .image {
+    width: 120px;
+  }
+}
+
+@media (min-width:768px) and (max-width:1199px) {
+  .property-details .details-images .right-part-img {
+    margin-top: 24px;
+  }
+
+  .property-details .details-box .detail-row {
+    --bs-gutter-y: 20px;
+  }
+}
+
+@media (min-width:768px) and (max-width:991px) {
+
+  .property-details .property-title h2,
+  .property-details .price h3 {
+    font-size: 30px;
+  }
+
+  .property-details .sidebar {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .property-details {
+    padding-top: 24px;
+  }
+
+  .property-details .filter-main .filter-buttons {
+    flex-direction: column;
+    align-items: center !important;
+  }
+
+  .property-details .filter-main .filter-buttons .search {
+    width: fit-content;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .property-details .property-title h2 {
+    font-size: 20px;
+    padding-bottom: 12px;
+  }
+
+  .property-details .property-title ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .property-details .price {
+    text-align: left !important;
+    padding-top: 16px;
+  }
+
+  .property-details .price h3 {
+    font-size: 24px;
+  }
+
+  .property-details .details-images .right-part-img {
+    margin-top: 24px;
+  }
+
+  .property-details .details-box {
+    margin-top: 24px;
+  }
+
+  .property-details .details-title h4 {
+    font-size: 20px;
+  }
+
+  .property-details .details-box p {
+    font-size: 14px;
+  }
+
+  .property-details .property-details-list p {
+    font-size: 16px;
+  }
+
+  .property-details .details-box .nav-tabs {
+    column-gap: 14px;
+    row-gap: 8px;
+  }
+
+  .property-details .details-box .nav-tabs .nav-link {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .property-details .details-box .tab-content .text {
+    min-height: fit-content;
+  }
+
+  .property-details .details-box .detail-row {
+    --bs-gutter-y: 20px;
+  }
+
+  .property-details .details-box .tab-content .image {
+    height: 250px;
+  }
+
+  .property-details .details-box .video .overlay a {
+    height: 32px;
+    width: 32px;
+    border-width: 3px;
+  }
+
+  .property-details .details-box .video .overlay a i {
+    font-size: 14px;
+  }
+
+  .property-details .details-box .location {
+    height: 160px;
+  }
+
+  .property-details .featured-list .image {
+    width: 103px;
+  }
+
+  .property-details .featured-list>li {
+    gap: 8px;
+  }
+
+  .property-details .featured-list .others li i {
+    font-size: 14px;
+  }
+
+  .property-details .featured-list .item-title {
+    padding: 0;
+    font-size: 14px;
+    line-height: 22px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    width: calc(100% - 24px);
+    overflow: hidden;
+  }
+
+  .property-details .featured-list p {
+    font-size: 16px;
+  }
+
+  .property-details .blog-list .image {
+    width: 90px;
+    border-radius: 12px;
+  }
+
+  .property-details .blog-list span {
+    font-size: 12px;
+  }
+
+  .property-details .blog-box {
+    padding-right: 11px;
+  }
+
+  .property-details .blog-list h4 {
+    font-size: 14px;
+    padding-top: 6px;
+  }
+
+  .property-details .social-icon-list a {
+    height: 32px;
+    width: 32px;
+  }
+
+  .property-details .social-icon-list a i {
+    font-size: 18px;
+    line-height: 32px;
+  }
+}
+
+/*===========================================================
+related properties CSS
+=============================================================*/
+.related-properties {
+  padding-top: 0;
+}
+
+.related-properties .title {
+  padding-bottom: 0;
+}
+
+.related-properties .title h2 {
+  margin: 0;
+  font-size: 24px;
+  line-height: 38px;
+}
+
+.related-properties .title h2::after {
+  width: 32px;
+}
+
+.related-properties .related-property-slider {
+  padding: 24px 12px;
+}
+
+@media screen and (max-width:575px) {
+  .related-properties .title h2::after {
+    left: 0;
+    transform: translateX(0);
+  }
 }

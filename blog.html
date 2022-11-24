@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+  <title>Real Estate | Property</title>
+
+  <script src="https://unpkg.com/phosphor-icons"></script>
+
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/select2.min.css" />
+  <link rel="stylesheet" href="assets/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+  <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="assets/css/magnific-popup.css">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/blog.css">
+</head>
+<body>
+  <!-- header start -->
+  <header>
+    <section class="navigation">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="row align-items-center">
+              <div class="col-7 col-md-4 col-lg-3 col-xl-2">
+                <a class="navbar-brand" href="index.html">
+                  <img src="assets/images/logo.png" alt="">
+                </a>
+              </div>
+              <div class="col-5 col-md-8 col-lg-9 col-xl-10">
+                <!-- navbar toggler -->
+                <div class="d-flex align-items-center justify-content-end">
+                  <button type="button" class="nav-toggler" id="nav-toggler">
+                    <svg width="17" height="16" viewBox="0 0 17 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M0.636113 3.2854H16.0579C16.3544 3.2854 16.651 3.0259 16.651 2.69226V1.2094C16.651 0.912826 16.3544 0.616254 16.0579 0.616254H0.636113C0.302469 0.616254 0.0429688 0.912826 0.0429688 1.2094V2.69226C0.0429688 3.0259 0.302469 3.2854 0.636113 3.2854ZM0.636113 9.21684H16.0579C16.3544 9.21684 16.651 8.95734 16.651 8.6237V7.14084C16.651 6.84427 16.3544 6.5477 16.0579 6.5477H0.636113C0.302469 6.5477 0.0429688 6.84427 0.0429688 7.14084V8.6237C0.0429688 8.95734 0.302469 9.21684 0.636113 9.21684ZM0.636113 15.1483H16.0579C16.3544 15.1483 16.651 14.8888 16.651 14.5551V13.0723C16.651 12.7757 16.3544 12.4791 16.0579 12.4791H0.636113C0.302469 12.4791 0.0429688 12.7757 0.0429688 13.0723V14.5551C0.0429688 14.8888 0.302469 15.1483 0.636113 15.1483Z" fill="#1C213C"/>
+                      </svg>                    
+                  </button>
+                </div>
+
+                <!-- main menu -->
+                <div class="main-nav">
+                  <!-- mobile header -->
+                  <div class="mobile-header">
+                    <!-- mobile logo -->
+                    <a class="navbar-brand" href="index.html">
+                      <img src="assets/images/logo.png" alt="">
+                    </a>
+
+                    <!-- close menu -->
+                    <button type="button" id="close-nav"><i class="ph-x"></i></button>
+                  </div>
+                  <ul class="nav-bar">
+                    <li class="nav-item">
+                      <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link submenu active" href="#" role="button">
+                        Property
+                      </a>
+                      <ul class="dropdown-submenu custom-scrollbar">
+                        <li><a class="dropdown-item" href="#">Appartment</a></li>
+                        <li><a class="dropdown-item" href="#">Villa</a></li>
+                        <li><a class="dropdown-item" href="#">House</a></li>
+                        <li><a class="dropdown-item" href="#">Duplexes</a></li>
+                        <li><a class="dropdown-item" href="#">Family House</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </header>
+  <!-- header end -->
+
+  <!-- main start -->
+  <main>
+    <!-- breadcrumb start -->
+    <section class="quick-menu">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <nav aria-label="breadcrumb">
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html"><i class="ph-house home"></i> Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><i class="ph-caret-right"></i>Blog</li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrumb end -->
+
+    <!-- blog start -->
+    <section class="blog blog-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="title text-center">
+              <h2>Latest blog news</h2>
+            </div>
+          </div>
+          <!-- recent blogs -->
+          <div class="recent-blogs">
+            <div class="col-md-12">
+              <div class="blog-section-title">
+                <h3>Recent Blog Post</h3>
+              </div>
+              <div class="blogs">
+                <div class="row">
+                  <div class="col-lg-6 col-xl-5 col-xxl-6">
+                    <div class="single-blog">
+                      <div class="image">
+                        <img src="assets/images/blog/blog1.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span><i class="ph-calendar"></i> September 26,2023</span>
+                          <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-title">
+                          <h3>How much do you know about...</h3>
+                          <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta. Aliquam ebendum erat.</p>
+                        </div>
+                        <ul class="tags d-flex align-items-center">
+                          <li><a href="#" class="research">Research</a></li>
+                          <li><a href="#" class="case-study">Case Study</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-xl-7 col-xxl-6">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <div class="single-blog small-blog">
+                          <div class="image">
+                            <img src="assets/images/blog/blog5.jpg" class="img-fluid" alt="">
+                          </div>
+                          <div class="content">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <span><i class="ph-calendar"></i> September 26,2023</span>
+                              <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                            </div>
+                            <div class="blog-title">
+                              <h3>The home do you know about...</h3>
+                              <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta.</p>
+                            </div>
+                            <ul class="tags d-flex align-items-center">
+                              <li><a href="#" class="research">Research</a></li>
+                              <li><a href="#" class="case-study">Case Study</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-12">
+                        <div class="single-blog small-blog">
+                          <div class="image">
+                            <img src="assets/images/blog/blog4.jpg" class="img-fluid" alt="">
+                          </div>
+                          <div class="content">
+                            <div class="d-flex align-items-center justify-content-between">
+                              <span><i class="ph-calendar"></i> September 26,2023</span>
+                              <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                            </div>
+                            <div class="blog-title">
+                              <h3>Luxury home that can make...</h3>
+                              <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta.</p>
+                            </div>
+                            <ul class="tags d-flex align-items-center">
+                              <li><a href="#" class="research">Research</a></li>
+                              <li><a href="#" class="case-study">Case Study</a></li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- all blogs -->
+          <div class="all-blogs">
+            <div class="col-md-12">
+              <div class="blog-section-title">
+                <h3>All Blog Post</h3>
+              </div>
+              <div class="blogs">
+                <div class="row">
+                  <div class="col-lg-6">
+                    <div class="single-blog">
+                      <div class="image">
+                        <img src="assets/images/blog/blog7.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span><i class="ph-calendar"></i> September 26,2023</span>
+                          <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-title">
+                          <h3>All that you know about...</h3>
+                          <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta. Aliquam ebendum erat.</p>
+                        </div>
+                        <ul class="tags d-flex align-items-center">
+                          <li><a href="#" class="research">Research</a></li>
+                          <li><a href="#" class="case-study">Case Study</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="single-blog">
+                      <div class="image">
+                        <img src="assets/images/blog/blog8.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span><i class="ph-calendar"></i> September 26,2023</span>
+                          <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-title">
+                          <h3>This blog do you know about...</h3>
+                          <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta. Aliquam ebendum erat.</p>
+                        </div>
+                        <ul class="tags d-flex align-items-center">
+                          <li><a href="#" class="research">Research</a></li>
+                          <li><a href="#" class="case-study">Case Study</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="single-blog">
+                      <div class="image">
+                        <img src="assets/images/blog/blog9.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span><i class="ph-calendar"></i> September 26,2023</span>
+                          <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-title">
+                          <h3>Interesting things you know about...</h3>
+                          <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta. Aliquam ebendum erat.</p>
+                        </div>
+                        <ul class="tags d-flex align-items-center">
+                          <li><a href="#" class="research">Research</a></li>
+                          <li><a href="#" class="case-study">Case Study</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="single-blog">
+                      <div class="image">
+                        <img src="assets/images/blog/blog10.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span><i class="ph-calendar"></i> September 26,2023</span>
+                          <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-title">
+                          <h3>How much do you know about...</h3>
+                          <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta. Aliquam ebendum erat.</p>
+                        </div>
+                        <ul class="tags d-flex align-items-center">
+                          <li><a href="#" class="research">Research</a></li>
+                          <li><a href="#" class="case-study">Case Study</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="single-blog">
+                      <div class="image">
+                        <img src="assets/images/blog/blog11.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span><i class="ph-calendar"></i> September 26,2023</span>
+                          <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-title">
+                          <h3>How much do you know about...</h3>
+                          <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta. Aliquam ebendum erat.</p>
+                        </div>
+                        <ul class="tags d-flex align-items-center">
+                          <li><a href="#" class="research">Research</a></li>
+                          <li><a href="#" class="case-study">Case Study</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-lg-6">
+                    <div class="single-blog">
+                      <div class="image">
+                        <img src="assets/images/blog/blog6.jpg" class="img-fluid" alt="">
+                      </div>
+                      <div class="content">
+                        <div class="d-flex align-items-center justify-content-between">
+                          <span><i class="ph-calendar"></i> September 26,2023</span>
+                          <a href="#" class="details-btn"><i class="ph-arrow-up-right"></i></a>
+                        </div>
+                        <div class="blog-title">
+                          <h3>How much do you know about...</h3>
+                          <p>Consectetur adipiscing elit. Donec volutpat nec purus eget porta. Aliquam ebendum erat.</p>
+                        </div>
+                        <ul class="tags d-flex align-items-center">
+                          <li><a href="#" class="research">Research</a></li>
+                          <li><a href="#" class="case-study">Case Study</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- blog end -->
+  </main>
+  <!-- main end -->
+
+  <!-- footer start -->
+  <footer>
+    <!-- top-footer start -->
+    <section class="top-footer">
+      <div class="container">
+        <div class="footer-main">
+          <div class="row">
+            <div class="col-sm-6 col-lg-4">
+              <div class="footer-content">
+                <a href="index.html">
+                  <img src="assets/images/footer-logo.png" alt="">
+                </a>
+                <p class="about">Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam. Lorem ipsum dolor sit amet consecteturr adipiscing elit aliquam</p>
+                <ul class="footer-social d-flex align-items-center">
+                  <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                  <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                  <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+              <div class="footer-content">
+                <div class="footer-title">
+                  <h4>Discover</h4>
+                </div>
+                <ul class="footer-links">
+                  <li><a href="#">New york</a></li>
+                  <li><a href="#">San Francisco</a></li>
+                  <li><a href="#">Minnesota</a></li>
+                  <li><a href="#">Los Angeles</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-2">
+              <div class="footer-content">
+                <div class="footer-title">
+                  <h4>Company</h4>
+                </div>
+                <ul class="footer-links">
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Property</a></li>
+                  <li><a href="#">Pricing</a></li>
+                  <li><a href="#">F&Q</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+              <div class="footer-content">
+                <div class="footer-title">
+                  <h4>Contacts us</h4>
+                </div>
+                <ul class="footer-address">
+                  <li>
+                    <i class="ph-envelope-simple"></i>
+                    <p>mycompany@mail.com</p>
+                  </li>
+                  <li>
+                    <i class="ph-phone"></i>
+                    <p>(589) 487 - 5892</p>
+                  </li>
+                  <li>
+                    <i class="ph-map-pin"></i>
+                    <ul>
+                      <li><p>1545 Broadway</p></li>
+                      <li><p>New York, NY 10036</p></li>
+                      <li><p>+1 012 345 6789</p></li>
+                      <li><p>newyork@casaroyal.com</p></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- top-footer end -->
+
+    <!-- bottom-footer start -->
+    <section class="bottom-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <div class="footer-main">
+              <p>Copywrite © 2023 - RealEstate. All rights reserved.</p>
+
+              <a href="index.html">
+                <img src="assets/images/footer-logo-white.png" alt="">
+              </a>
+
+              <ul class="footer-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Property</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bottom-footer end -->
+  </footer>
+  <!-- footer end -->
+
+  <script src="assets/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/jquery-3.6.1.min.js"></script>
+  <script src="assets/js/jquery-ui.js"></script>
+  <script src="assets/js/select2.min.js"></script>
+  <script src="assets/js/swiper-bundle.min.js"></script>
+  <script src="assets/js/mixitup.min.js"></script>
+  <script src="assets/js/jquery.magnific-popup.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

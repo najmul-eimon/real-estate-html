@@ -113,7 +113,7 @@ $(function(){
     // other options
   });
 
-  /*======================= partmer slider ========================*/
+  /*======================= partner slider ========================*/
   var swiper = new Swiper(".partner-slider", {
     loop: true,
     spaceBetween: 24,
@@ -132,6 +132,24 @@ $(function(){
       },
       992: {
         slidesPerView: 4,
+      }
+    }
+  });
+  /*======================= related property slider ========================*/
+  var swiper = new Swiper(".related-property-slider", {
+    loop: true,
+    spaceBetween: 24,
+    autoplay: true,
+    slidesPerGroup: 1,
+    breakpoints: {
+      576: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      992: {
+        slidesPerView: 3,
       }
     }
   });

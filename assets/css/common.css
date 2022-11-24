@@ -118,6 +118,12 @@ a:focus {
   margin: auto;
 }
 
+.title p {
+  padding-top: 4px;
+  font-size: 16px;
+  color: var(--primary-text);
+}
+
 .title h2::after {
   content: '';
   position: absolute;
@@ -159,6 +165,7 @@ main {
     line-height: 36px;
   }
 }
+
 @media screen and (max-width:575px) {
   .title h2::after {
     left: 50%;
@@ -167,11 +174,12 @@ main {
 }
 
 @media screen and (min-width: 1200px) {
-  .col-xl-7half{
+  .col-xl-7half {
     flex: 0 0 auto;
     width: 62.5%;
   }
-  .col-xl-4half{
+
+  .col-xl-4half {
     flex: 0 0 auto;
     width: 37.5%;
   }
@@ -306,7 +314,7 @@ Select CSS
 Quick-menu breadcrumb CSS
 =============================================================*/
 .quick-menu {
-  padding: 28px 0 12px;
+  padding: 24px 0;
 }
 
 .breadcrumb {
@@ -323,8 +331,13 @@ Quick-menu breadcrumb CSS
 
 .breadcrumb-item i {
   font-size: 20px;
+  color: var(--primary-text2);
+  padding-right: 11px;
+}
+
+.breadcrumb-item i.home {
+  font-size: 22px;
   color: var(--primary);
-  margin-right: 11px;
 }
 
 .breadcrumb-item a:hover {
@@ -332,13 +345,17 @@ Quick-menu breadcrumb CSS
 }
 
 .breadcrumb-item+.breadcrumb-item::before {
-  content: '\f054';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 600;
-  font-size: 20px;
-  color: var(--primary-text2);
-  padding: 0 11px;
+  content: '';
+  padding-right: 0;
 }
+
+@media screen and (max-width:575px) {
+  .quick-menu {
+    display: none;
+  }
+}
+
+
 
 /*===========================================================
 header CSS
