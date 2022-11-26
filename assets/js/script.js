@@ -1,12 +1,19 @@
 $(function(){
   "use strick";
 
+  /*======================== preloader ===========================*/
+  $(document).ready(function() {
+    $("#preloader ").fadeOut(500); 
+  });
+
   /*======================= navigation menu toggle ========================*/
   $("#nav-toggler").on("click", function () {
     $(".main-nav").addClass('show-nav');
+    $('body').addClass('scroll-lock');
   });
   $("#close-nav").on("click", function () {
     $(".main-nav").removeClass('show-nav');
+    $('body').removeClass('scroll-lock');
   });
 
   /*======================= Filter toggle ========================*/

@@ -50,7 +50,8 @@ properties CSS
   border-radius: 2px;
   background-color: #F5F5F5;
 }
-.properties .filter-btn-list button:hover{
+
+.properties .filter-btn-list button:hover {
   background-color: #E2F3F4;
   color: var(--primary);
 }
@@ -236,7 +237,7 @@ properties CSS
     padding: 32px 24px 24px 24px;
   }
 
-  .properties .single-property a, 
+  .properties .single-property a,
   .properties .single-property button {
     font-size: 16px;
   }
@@ -255,11 +256,13 @@ properties CSS
     padding: 20px;
     gap: 20px;
   }
-  .properties .single-property a, 
+
+  .properties .single-property a,
   .properties .single-property button {
     font-size: 16px;
   }
-  .properties .list-view .single-property p{
+
+  .properties .list-view .single-property p {
     font-size: 14px;
   }
 

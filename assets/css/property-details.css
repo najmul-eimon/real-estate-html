@@ -183,7 +183,8 @@ property details CSS
   border: 4px solid var(--white);
   position: relative;
 }
-.property-details .details-box .video .overlay a::before{
+
+.property-details .details-box .video .overlay a::before {
   content: '';
   position: absolute;
   top: -4px;
@@ -302,7 +303,8 @@ property details CSS
     width: 32px;
     border-width: 3px;
   }
-  .property-details .details-box .video .overlay a::before{
+
+  .property-details .details-box .video .overlay a::before {
     height: 32px;
     width: 32px;
     top: -3px;

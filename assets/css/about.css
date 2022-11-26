@@ -45,7 +45,7 @@ about CSS
   transform: translate(-50%, -50%);
 }
 
-.about .video a::before{
+.about .video a::before {
   content: '';
   position: absolute;
   top: -4px;
@@ -160,6 +160,7 @@ about CSS
   .about .text-content p {
     font-size: 14px;
   }
+
   .about .text-content .contact-btn {
     width: 100%;
     max-width: 296px;
