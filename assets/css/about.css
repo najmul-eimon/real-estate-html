@@ -45,6 +45,22 @@ about CSS
   transform: translate(-50%, -50%);
 }
 
+.about .video a::before{
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: -4px;
+  height: 48px;
+  width: 48px;
+  border-radius: 50%;
+  background-color: transparent;
+  animation: ripple;
+  animation-duration: 3s;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+}
+
+
 .about .text-content .about-box {
   padding-bottom: 28px;
 }

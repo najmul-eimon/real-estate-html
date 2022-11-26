@@ -101,12 +101,14 @@ blog CSS
   line-height: 20px;
 }
 
-.blog .single-blog .tags {
+.blog .tags,
+.blog-details .tags {
   gap: 24px;
   flex-wrap: wrap;
 }
 
-.blog .single-blog .tags a {
+.blog .tags a,
+.blog-details .tags a {
   display: inline-block;
   padding: 5px 16px;
   border-radius: 47px;
@@ -114,12 +116,14 @@ blog CSS
   font-weight: 600;
 }
 
-.blog .single-blog .tags .research {
+.blog .tags .research,
+.blog-details .tags .research {
   color: #007BEC;
   background-color: #D9EFFF;
 }
 
-.blog .single-blog .tags .case-study {
+.blog .tags .case-study,
+.blog-details .tags .case-study {
   color: #2137FF;
   background-color: #E0E5FF;
 }
@@ -182,6 +186,7 @@ blog CSS
   .blog .single-blog .content {
     padding: 0 16px 16px 24px;
   }
+
   .blog .single-blog,
   .blog .single-blog .image {
     border-radius: 12px;
@@ -227,22 +232,157 @@ blog CSS
 blog-page CSS
 =============================================================*/
 
-.blog-page .blog-section-title{
+.blog-page .blog-section-title {
   padding-bottom: 32px;
 }
-.blog-page .blog-section-title h3{
+
+.blog-page .blog-section-title h3 {
   padding: 8px 16px;
   font-size: 18px;
   font-weight: 600;
   color: var(--primary-text);
 }
 
-.blog-page .recent-blogs{
+.blog-page .recent-blogs {
   margin-bottom: 40px;
 }
 
 @media screen and (max-width:767px) {
-  .blog-page .blog-section-title{
+  .blog-page .blog-section-title {
     padding-bottom: 24px;
+  }
+}
+
+/*===========================================================
+blog details CSS
+=============================================================*/
+.blog-details {
+  padding: 8px 0 64px;
+}
+
+.blog-details .content {
+  padding: 24px;
+}
+
+.blog-details .date {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.blog-details .date span {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 16px;
+  color: var(--primary-text2);
+}
+
+.blog-details .date span i {
+  font-size: 24px;
+}
+
+.blog-details .content h3 {
+  font-size: 32px;
+  line-height: 51px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.blog-details .paragraph p {
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--primary-text2);
+}
+
+.blog-details .paragraph p:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.blog-details .content .image {
+  border-radius: 16px;
+  overflow: hidden;
+  margin: 32px 0;
+}
+
+.blog-details .content .img {
+  display: flex;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.blog-details .content .img .image {
+  border-radius: 12px;
+  margin: 0;
+}
+
+.blog-details .content .image img {
+  width: 100%;
+}
+
+
+@media (min-width: 992px) and (max-width:1199px) {
+  .blog-details .content h3 {
+    font-size: 26px;
+    line-height: 42px;
+  }
+}
+
+@media (min-width: 768px) and (max-width:991px) {
+  .blog-details .content h3 {
+    font-size: 28px;
+    line-height: 44px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .blog-details {
+    padding: 24px 0 32px;
+  }
+
+  .blog-details .content {
+    padding: 0 12px;
+  }
+
+  .blog-details .date {
+    margin-bottom: 16px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .blog-details .content h3 {
+    font-size: 20px;
+    line-height: 32px;
+    padding-bottom: 8px;
+  }
+
+  .blog-details .paragraph p {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .blog-details .paragraph p:not(:last-child) {
+    margin-bottom: 16px;
+  }
+
+  .blog-details .content .image {
+    border-radius: 12px;
+    margin: 16px 0;
+  }
+
+  .blog-details .content .img {
+    margin: 16px 0;
+  }
+
+  .blog-details .sidebar {
+    margin-top: 32px;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .blog-details .content .img {
+    flex-direction: column;
   }
 }

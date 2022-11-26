@@ -50,6 +50,10 @@ properties CSS
   border-radius: 2px;
   background-color: #F5F5F5;
 }
+.properties .filter-btn-list button:hover{
+  background-color: #E2F3F4;
+  color: var(--primary);
+}
 
 .properties .filter-btn-list .active button {
   background-color: var(--primary);

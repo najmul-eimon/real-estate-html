@@ -82,8 +82,9 @@ contact CSS
   outline: none;
   transition: all linear 0.3s;
 }
+
 .contact-form-fields .input-fields:hover,
-.contact-form-fields .input-fields:focus{
+.contact-form-fields .input-fields:focus {
   border-color: var(--primary);
 }
 
@@ -101,6 +102,12 @@ contact CSS
 .contact-form-fields .select2-container--default .select2-selection--single {
   border: 1px solid #D9D9D9;
   border-radius: 4px;
+  transition: all 0.3s linear;
+}
+
+.contact-form-fields .select2-container--default .select2-selection--single:focus,
+.contact-form-fields .select2-container--default .select2-selection--single:hover {
+  border-color: var(--primary);
 }
 
 .contact-form-fields .select2-container .select2-selection--single {
@@ -169,7 +176,7 @@ contact CSS
 
   .contact .social-box .social-media {
     gap: 40px;
-    padding-top: 28px;
+    padding: 28px 0;
   }
 
   .contact .social-box {
@@ -183,5 +190,79 @@ contact CSS
 
   .contact-form-fields .row {
     --bs-gutter-y: 24px;
+  }
+}
+
+/*===========================================================
+address CSS
+=============================================================*/
+.address {
+  padding: 64px 0;
+}
+
+.address .address-card .image {
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 24px;
+}
+
+.address .address-card .image img {
+  width: 100%;
+}
+
+.address .address-card h4 {
+  padding-bottom: 12px;
+  font-size: 32px;
+  font-weight: 600;
+  color: var(--primary-text);
+}
+
+.address .address-card p {
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--primary-text2);
+}
+
+.address .address-card a {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 9px 38px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white);
+  background-color: var(--primary);
+  border-radius: 8px;
+}
+
+@media (min-width:768px) and (max-width:991px) {
+  .address .address-card h4 {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .address {
+    padding: 32px 0;
+  }
+
+  .address .address-row {
+    --bs-gutter-y: 16px;
+  }
+
+  .address .address-card h4 {
+    padding-bottom: 0;
+    font-size: 24px;
+  }
+
+  .address .address-card p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .address .address-card a {
+    width: 100%;
+    padding: 8px 38px;
+    font-size: 14px;
+    text-align: center;
   }
 }
