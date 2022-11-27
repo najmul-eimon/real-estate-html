@@ -36,8 +36,7 @@ $(function(){
       $( "#amount" ).val( "$" + ui.values[ 0 ] + " to $" + ui.values[ 1 ] );
     }
   });
-  $( "#amount" ).val( "$ " + $( "#price-slider-range" ).slider( "values", 0 ) +
-    " to $ " + $( "#price-slider-range" ).slider( "values", 1 ) );
+  $( "#amount" ).val( "$ " + $( "#price-slider-range" ).slider( "values", 0 ) + " to $ " + $( "#price-slider-range" ).slider( "values", 1 ));
 
   /*======================= Filter range for area ========================*/
   $( "#area-slider-range" ).slider({
@@ -49,8 +48,7 @@ $(function(){
       $( "#area" ).val( ui.values[ 0 ] + " to " + ui.values[ 1 ] );
     }
   });
-  $( "#area" ).val( $( "#area-slider-range" ).slider( "values", 0 ) +
-    " to " + $( "#area-slider-range" ).slider( "values", 1 ) );
+  $( "#area" ).val( $( "#area-slider-range" ).slider( "values", 0 ) + " to " + $( "#area-slider-range" ).slider( "values", 1 ));
 
   /*======================= Counter up ========================*/
   var counterUp = document.querySelector('#counter')
