@@ -2,7 +2,7 @@
 property details CSS
 =============================================================*/
 .property-details {
-  padding-top: 8px;
+  padding-top: 64px;
   padding-bottom: 32px;
 }
 
@@ -211,11 +211,16 @@ property details CSS
   height: 100%;
 }
 
-
-@media (min-width:768px) and (max-width:1199px) {
+@media (min-width:992px) and (max-width:1199px) {
   .property-details .details-images .right-part-img {
     margin-top: 24px;
   }
+}
+@media (min-width:768px) and (max-width:1199px) {
+  .property-details {
+    padding: 32px 0;
+  }
+  
 
   .property-details .details-box .detail-row {
     --bs-gutter-y: 20px;
@@ -223,7 +228,7 @@ property details CSS
 }
 
 @media (min-width:768px) and (max-width:991px) {
-
+  
   .property-details .property-title h2,
   .property-details .price h3 {
     font-size: 30px;
@@ -237,6 +242,10 @@ property details CSS
 
 
 @media screen and (max-width:767px) {
+  .property-details {
+    padding: 32px 0;
+  }
+  
   .property-details .property-title h2 {
     font-size: 20px;
     padding-bottom: 12px;
@@ -270,10 +279,6 @@ property details CSS
 
   .property-details .details-box p {
     font-size: 14px;
-  }
-
-  .property-details .property-details-list p {
-    font-size: 16px;
   }
 
   .property-details .details-box .nav-tabs {

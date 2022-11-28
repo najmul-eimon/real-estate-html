@@ -16,6 +16,7 @@ blog CSS
   background-color: var(--white);
 }
 
+
 .blog .small-blog {
   display: flex;
   align-items: center;
@@ -143,7 +144,14 @@ blog CSS
   font-size: 18px;
   font-weight: 600;
 }
-
+@media (min-width:1200px) and (max-width:1399px) {
+  .blog .big-blog .image{
+    height: 197px;
+  }
+  .blog .big-blog .image img{
+    height: 100%;
+  }
+}
 @media (min-width:992px) and (max-width:1199px) {
   .blog {
     padding: 32px 0;
@@ -257,7 +265,7 @@ blog-page CSS
 blog details CSS
 =============================================================*/
 .blog-details {
-  padding: 8px 0 64px;
+  padding: 64px 0;
 }
 
 .blog-details .content {
@@ -324,6 +332,9 @@ blog details CSS
 
 
 @media (min-width: 992px) and (max-width:1199px) {
+  .blog-details{
+    padding: 32px 0;
+  }
   .blog-details .content h3 {
     font-size: 26px;
     line-height: 42px;
@@ -331,6 +342,9 @@ blog details CSS
 }
 
 @media (min-width: 768px) and (max-width:991px) {
+  .blog-details{
+    padding: 32px 0;
+  }
   .blog-details .content h3 {
     font-size: 28px;
     line-height: 44px;
@@ -339,7 +353,7 @@ blog details CSS
 
 @media screen and (max-width:767px) {
   .blog-details {
-    padding: 24px 0 32px;
+    padding: 32px 0;
   }
 
   .blog-details .content {

@@ -294,6 +294,11 @@ properties CSS
     margin-top: 16px;
     justify-content: center !important;
   }
+  .properties .pagination li a {
+    height: 44px;
+    width: 44px;
+    font-size: 16px;
+  }
 
   .properties .single-property .item-wrapper {
     padding: 32px 15px 16px 15px;
