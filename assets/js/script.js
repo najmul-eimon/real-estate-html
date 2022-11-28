@@ -6,6 +6,21 @@ $(function(){
     $("#preloader ").fadeOut(500); 
   });
 
+  /*======================== property tab show/hide ===========================*/
+  $(window).on('resize', function(){
+    if($(window).innerWidth() < 768){
+      if($('#list-view-tab-pane').hasClass('active')){
+        $('#list-view-tab-pane').removeClass('show active');
+        $('#grid-view-tab-pane').addClass('show active');
+      }
+
+      if($('#list-view-tab').hasClass('active')){
+        $('#list-view-tab').removeClass('active');
+        $('#grid-view-tab').addClass('active');
+      }
+    }
+  });
+
   /*======================= navigation menu toggle ========================*/
   $("#nav-toggler").on("click", function () {
     $(".main-nav").addClass('show-nav');
