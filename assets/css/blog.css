@@ -234,6 +234,10 @@ blog CSS
     margin-bottom: 16px;
     width: 100%;
   }
+
+  .blog .view-all-btn {
+    font-size: 14px;
+  }
 }
 
 /*===========================================================

@@ -191,6 +191,9 @@ contact CSS
   .contact-form-fields .row {
     --bs-gutter-y: 24px;
   }
+  .contact-form-fields .submit-btn {
+    font-size: 14px;
+  }
 }
 
 /*===========================================================

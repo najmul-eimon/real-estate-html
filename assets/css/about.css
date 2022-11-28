@@ -164,5 +164,6 @@ about CSS
   .about .text-content .contact-btn {
     width: 100%;
     max-width: 296px;
+    font-size: 14px;
   }
 }
