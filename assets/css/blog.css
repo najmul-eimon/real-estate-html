@@ -36,6 +36,7 @@ blog CSS
 
 .blog .single-blog .image img {
   width: 100%;
+  object-fit: cover;
 }
 
 .blog .single-blog .content {
@@ -151,6 +152,9 @@ blog CSS
   .blog .big-blog .image img{
     height: 100%;
   }
+  .blog .single-blog h3 {
+    font-size: 30px;
+  }
 }
 @media (min-width:992px) and (max-width:1199px) {
   .blog {
@@ -182,10 +186,14 @@ blog CSS
   }
 
   .blog .single-blog h3 {
-    font-size: 30px;
+    font-size: 26px;
   }
 }
-
+@media (min-width:576px) and (max-width:767px) {
+  .blog .small-blog .image {
+    height: 180px;
+  }
+}
 @media screen and (max-width:767px) {
   .blog {
     padding: 32px 0;
@@ -233,6 +241,11 @@ blog CSS
   .blog .small-blog .image {
     margin-bottom: 16px;
     width: 100%;
+  }
+
+  .blog .tags a, 
+  .blog-details .tags a {
+    font-size: 14px;
   }
 
   .blog .view-all-btn {

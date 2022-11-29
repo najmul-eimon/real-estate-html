@@ -100,7 +100,7 @@ Banner CSS
 
 @media screen and (max-width:767px) {
   .banner {
-    padding: 12px 0 4px;
+    padding: 16px 0 4px;
   }
 
   .banner .banner-content {
@@ -186,13 +186,28 @@ place CSS
   }
 }
 
+@media (min-width:768px) and (max-width:991px) {
+  .place .single-place .overlay {
+    padding: 20px;
+  }
+
+  .place .single-place p {
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .place .single-place p i {
+    font-size: 24px;
+  }
+}
+
 @media screen and (max-width:767px) {
   .place {
     padding: 32px 0;
   }
 
   .place .single-place .overlay {
-    padding: 24px 20px;
+    padding: 20px;
   }
 
   .place .single-place p {

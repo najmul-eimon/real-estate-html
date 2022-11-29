@@ -131,6 +131,25 @@ about CSS
   .about .image {
     margin: 0 auto 32px auto;
   }
+
+  .about .video,
+  .about .image {
+    width: 100%;
+  }
+
+  .about .text-content h3 {
+    font-size: 22px;
+    line-height: 34px;
+  }
+
+  .about .text-content h3 br {
+    display: none;
+  }
+
+  .about .text-content p {
+    font-size: 14px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width:767px) {
@@ -159,6 +178,7 @@ about CSS
 
   .about .text-content p {
     font-size: 14px;
+    line-height: 24px;
   }
 
   .about .text-content .contact-btn {
