@@ -290,7 +290,7 @@
   }
 
   .sidebar .blog-box {
-    padding-right: 11px;
+    padding-right: 15px !important;
   }
 
   .sidebar .blog-list h4 {
