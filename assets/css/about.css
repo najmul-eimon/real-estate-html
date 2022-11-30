@@ -11,6 +11,7 @@ about CSS
   border-radius: 12px;
   overflow: hidden;
   border: 13px solid var(--white);
+  -webkit-filter: drop-shadow(0px 0px 37px rgba(34, 34, 51, 0.22));
   filter: drop-shadow(0px 0px 37px rgba(34, 34, 51, 0.22));
   box-sizing: border-box;
 }
@@ -26,6 +27,7 @@ about CSS
   width: 365px;
   border-radius: 12px;
   overflow: hidden;
+  -webkit-filter: drop-shadow(0px 0px 37px rgba(34, 34, 51, 0.22));
   filter: drop-shadow(0px 0px 37px rgba(34, 34, 51, 0.22));
 }
 
@@ -42,6 +44,7 @@ about CSS
   position: absolute;
   top: 50%;
   left: 50%;
+  -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 

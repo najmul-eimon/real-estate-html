@@ -11,7 +11,8 @@ Select CSS
 
 .select2-dropdown {
   border: 0;
-  border-radius: 0;
+  border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
   box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
 }
 
@@ -67,6 +68,7 @@ Select CSS
 .select2-container--default .select2-selection--single .select2-selection__arrow {
   height: auto;
   top: 50%;
+  -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   right: 4px;
   width: auto;
@@ -104,6 +106,7 @@ filter properties CSS
   background-color: var(--white);
   border-radius: 12px;
   padding: 24px;
+  -webkit-box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
   box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
 }
 

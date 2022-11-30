@@ -68,6 +68,7 @@ properties CSS
 .properties .filter-btn-list .dropdown-menu {
   border: 0;
   border-radius: 6px;
+  -webkit-box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
   box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
   padding: 0;
   overflow: hidden;
@@ -90,6 +91,7 @@ properties CSS
 }
 
 .properties .single-property {
+  -webkit-box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
   box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
   border-radius: 12px;
   background-color: var(--white);
@@ -155,6 +157,13 @@ properties CSS
 
 .properties .single-property .image img {
   width: 100%;
+  -webkit-transition: all ease-in-out 0.6s;
+  transition: all ease-in-out 0.6s;
+}
+
+.properties .single-property:hover .image img{
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .properties .list-view .single-property .image {

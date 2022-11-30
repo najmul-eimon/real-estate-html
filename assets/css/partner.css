@@ -16,6 +16,7 @@ partner CSS
 .partner .item {
   width: auto;
   height: 166px;
+  -webkit-box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
   box-shadow: 0px 0px 37px rgba(34, 34, 51, 0.08);
   background-color: var(--white);
   display: flex;

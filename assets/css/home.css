@@ -145,11 +145,13 @@ place CSS
 }
 
 .place .single-place img {
+  -webkit-transition: all 1s ease-in-out;
   transition: all 1s ease-in-out;
   width: 100%;
 }
 
 .place .single-place a:hover img {
+  -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
 
