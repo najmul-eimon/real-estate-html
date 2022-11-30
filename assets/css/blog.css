@@ -154,7 +154,7 @@ blog CSS
 }
 @media (min-width:1200px) and (max-width:1399px) {
   .blog .big-blog .image{
-    height: 197px;
+    height: 200px;
   }
   .blog .big-blog .image img{
     height: 100%;
@@ -210,9 +210,16 @@ blog CSS
     padding: 0 16px 16px 24px;
   }
 
-  .blog .single-blog,
-  .blog .single-blog .image {
+  .blog .single-blog{
     border-radius: 12px;
+  }
+
+  .blog .single-blog .image {
+    height: 226px;
+    border-radius: 12px;
+  }
+  .blog .single-blog .image img{
+    height: 100%;
   }
 
   .blog .single-blog .details-btn {
@@ -231,6 +238,7 @@ blog CSS
 
   .blog .single-blog h3 {
     font-size: 24px;
+    line-height: 34px;
   }
 
   .blog .single-blog p {
@@ -259,6 +267,7 @@ blog CSS
     font-size: 14px;
   }
 }
+
 
 /*===========================================================
 blog-page CSS
