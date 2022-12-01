@@ -195,11 +195,13 @@ place CSS
 
   .place .single-place p {
     font-size: 18px;
-    font-weight: 400;
   }
 
   .place .single-place p i {
     font-size: 24px;
+  }
+  .place .all-places .row {
+    --bs-gutter-y: 14px;
   }
 }
 
