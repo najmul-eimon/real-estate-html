@@ -41,7 +41,8 @@ blog CSS
   -webkit-transition: all ease-in-out 0.8s;
   transition: all ease-in-out 0.8s;
 }
-.blog .single-blog:hover .image img{
+
+.blog .single-blog:hover .image img {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
@@ -152,17 +153,21 @@ blog CSS
   font-size: 18px;
   font-weight: 600;
 }
+
 @media (min-width:1200px) and (max-width:1399px) {
-  .blog .big-blog .image{
+  .blog .big-blog .image {
     height: 200px;
   }
-  .blog .big-blog .image img{
+
+  .blog .big-blog .image img {
     height: 100%;
   }
+
   .blog .single-blog h3 {
     font-size: 30px;
   }
 }
+
 @media (min-width:992px) and (max-width:1199px) {
   .blog {
     padding: 32px 0;
@@ -196,11 +201,13 @@ blog CSS
     font-size: 26px;
   }
 }
+
 @media (min-width:576px) and (max-width:767px) {
   .blog .small-blog .image {
     height: 180px;
   }
 }
+
 @media screen and (max-width:767px) {
   .blog {
     padding: 32px 0;
@@ -210,7 +217,7 @@ blog CSS
     padding: 0 16px 16px 24px;
   }
 
-  .blog .single-blog{
+  .blog .single-blog {
     border-radius: 12px;
   }
 
@@ -218,7 +225,8 @@ blog CSS
     height: 226px;
     border-radius: 12px;
   }
-  .blog .single-blog .image img{
+
+  .blog .single-blog .image img {
     height: 100%;
   }
 
@@ -258,7 +266,7 @@ blog CSS
     width: 100%;
   }
 
-  .blog .tags a, 
+  .blog .tags a,
   .blog-details .tags a {
     font-size: 14px;
   }
@@ -365,9 +373,10 @@ blog details CSS
 
 
 @media (min-width: 992px) and (max-width:1199px) {
-  .blog-details{
+  .blog-details {
     padding: 32px 0;
   }
+
   .blog-details .content h3 {
     font-size: 26px;
     line-height: 42px;
@@ -375,9 +384,10 @@ blog details CSS
 }
 
 @media (min-width: 768px) and (max-width:991px) {
-  .blog-details{
+  .blog-details {
     padding: 32px 0;
   }
+
   .blog-details .content h3 {
     font-size: 28px;
     line-height: 44px;

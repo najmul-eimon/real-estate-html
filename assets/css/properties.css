@@ -76,7 +76,7 @@ properties CSS
 
 .properties .filter-btn-list .dropdown-item {
   font-size: 14px;
-  color: #5C727D;
+  color: var(--body-text);
   padding: 9px 16px;
   background-color: var(--white);
 }

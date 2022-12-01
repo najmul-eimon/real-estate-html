@@ -229,7 +229,7 @@ main {
   }
 
   .title {
-    padding-bottom: 16px;
+    padding-bottom: 24px;
   }
 
   .title h2 {
@@ -247,6 +247,7 @@ main {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%);
+    bottom: -2px;
   }
 }
 
@@ -585,7 +586,7 @@ header {
 
 .navigation .dropdown-item {
   font-size: 16px;
-  color: #5C727D;
+  color: var(--body-text);
   padding: 9px 16px;
 }
 
@@ -670,7 +671,7 @@ header {
     -webkit-box-shadow: none;
     box-shadow: none;
     border-radius: 0;
-    border-left: 1px solid #AAACB3;
+    border-left: 1px solid var(--body-text2);
   }
 
   .navigation .nav-item:hover .dropdown-submenu {

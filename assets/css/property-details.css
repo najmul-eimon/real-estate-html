@@ -212,6 +212,11 @@ property details CSS
   height: 100%;
 }
 
+@media (min-width:1200px) and (max-width:1399px) {
+  .property-details .details-box .tab-content .text p{
+    font-size: 15px;
+  }
+}
 @media (min-width:992px) and (max-width:1199px) {
   .property-details .details-images .right-part-img {
     margin-top: 24px;
