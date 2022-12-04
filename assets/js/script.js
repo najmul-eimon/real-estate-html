@@ -162,6 +162,9 @@ $(function(){
     autoplay: true,
     slidesPerGroup: 1,
     breakpoints: {
+      576: {
+        slidesPerView: 1
+      },
       768: {
         slidesPerView: 2,
       },
