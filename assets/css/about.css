@@ -47,6 +47,10 @@ about CSS
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+.about .video a i{
+  font-size: 14px;
+  color: var(--white);
+}
 
 .about .video a::before {
   content: '';
