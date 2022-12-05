@@ -766,7 +766,7 @@ footer {
   padding-bottom: 16px;
 }
 
-.top-footer .footer-social a:hover,
+.top-footer .footer-social a:hover i,
 .top-footer .footer-links a:hover {
   color: var(--primary);
 }
@@ -778,6 +778,7 @@ footer {
 
 .top-footer .footer-address>li i {
   margin-top: 4px;
+  font-size: 20px;
 }
 
 .top-footer .footer-address>li:not(:last-child) {
