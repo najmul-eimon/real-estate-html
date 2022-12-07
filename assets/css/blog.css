@@ -5,8 +5,11 @@ blog CSS
   padding: 64px 0;
 }
 
-.blog .blogs .row {
+.blog .recent-blogs .blogs .row {
   --bs-gutter-y: 24px;
+}
+.blog .all-blogs .blogs .row {
+  --bs-gutter-y: 32px;
 }
 
 .blog .single-blog {
@@ -211,6 +214,9 @@ blog CSS
 @media screen and (max-width:767px) {
   .blog {
     padding: 32px 0;
+  }
+  .blog .all-blogs .blogs .row {
+    --bs-gutter-y: 24px;
   }
 
   .blog .single-blog .content {
