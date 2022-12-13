@@ -336,6 +336,13 @@ property details CSS
   .property-details {
     padding-top: 24px;
   }
+  .property-details .details-images .single-img {
+    height: 180px;
+  }
+  .property-details .details-images .single-img img {
+    height: 100%;
+    object-fit: cover;
+  }
 }
 
 /*===========================================================
