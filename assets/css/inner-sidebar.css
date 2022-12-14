@@ -57,11 +57,11 @@
   width: 100%;
 }
 
-.sidebar .featured-list .others,
-.sidebar .blog-list .others {
+.sidebar .featured-list .others{
   flex-grow: 1;
-  width: 100%;
+  width: calc(100% - 170px);
 }
+
 
 .sidebar .featured-list .others li i {
   font-size: 18px;
@@ -96,6 +96,11 @@
   width: 134px;
   flex-shrink: 0;
   height: auto;
+}
+
+.sidebar .blog-list .others {
+  flex-grow: 1;
+  width: 100%;
 }
 
 .sidebar .blog-list span {
