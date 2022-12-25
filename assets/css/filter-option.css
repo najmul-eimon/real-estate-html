@@ -24,6 +24,10 @@ Select CSS
   background-color: white;
 }
 
+.select2-container .select2-selection--single .select2-selection__rendered {
+  padding-left: 0;
+}
+
 .select2-container--default .select2-results__option--highlighted.select2-results__option--selectable {
   background-color: rgba(22, 163, 173, 0.1);
   color: var(--primary);

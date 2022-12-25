@@ -53,6 +53,9 @@ blog CSS
 .blog .single-blog .content {
   padding: 24px;
 }
+.blog .recent-blogs .big-blog .image{
+  margin-bottom: 29px;
+}
 
 .blog .small-blog .content {
   padding: 15px 16px 15px 24px;
