@@ -161,6 +161,10 @@ $(function(){
     spaceBetween: 24,
     autoplay: true,
     slidesPerGroup: 1,
+    pagination: {
+      clickable: true,
+      el: ".related-pagination",
+    },
     breakpoints: {
       576: {
         slidesPerView: 1
